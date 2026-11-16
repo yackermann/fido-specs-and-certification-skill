@@ -132,7 +132,10 @@ def fetch(d: dict, quiet: bool = False) -> Path:
                 data = r.read()
         except Exception as e:  # network blocked, 403, offline ...
             die(f"download failed for {d['url']}: {e}\n"
-                f"Ask the user to download it in a browser and save it as {p}")
+                f"cache path: {p}\n"
+                "Fallbacks (see SKILL.md, step 3.4): 1) curl -sL -A \"" + UA + f"\" -o \"{p}\" \"{d['url']}\" "
+                "then rerun this command; 2) web fetch tool on the URL, asking for the exact text of the "
+                "section by number and title; 3) ask the user to save the file at the cache path.")
         tmp = p.with_suffix(p.suffix + ".part")
         tmp.write_bytes(data)
         tmp.rename(p)

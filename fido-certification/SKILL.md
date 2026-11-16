@@ -65,8 +65,22 @@ and the version barely matters, answer from the latest version and say which one
 3. For PDF-only documents (for example the Functional Certification Policy), run `text`. If `pypdf`
    is installed, it writes a text file with `[page N]` markers that you can grep. Otherwise, open the
    PDF path from `fetch` with the Read tool, passing `pages`. If that also fails, suggest `pip install pypdf`.
-4. If the download fails (offline, blocked network), give the user the URL and the cache path the
-   script printed, and ask them to save the file there. Then continue.
+4. If the download fails, work down this list. The sandbox may block the domain (claude.ai and
+   some managed environments allow only listed domains), the site may reject the client, or the
+   machine may be offline.
+   1. **curl** (when you have a shell), saving to the cache path the script printed:
+      `curl -sL -A "fido-certification-skill/0.1" -o "<cache path>" "<url>"`. Then rerun the
+      `fido.py` command; it picks up the cached file and checks the hash.
+   2. **Web fetch tool** (it runs outside the code sandbox). Fetch the document URL from the catalog
+      page and ask for the **exact text** of the section you need, by number and title from the
+      catalog TOC (for example "the verbatim text of §6.5.5.7 Operations to Obtain a
+      pinUvAuthToken"). URL fragments (`#anchor`) are usually ignored, so name the section. The tool
+      may condense long pages. Rely only on text it returns verbatim for normative detail, and say
+      the source was fetched this way. Cite with the catalog URL and anchor as usual.
+   3. **Ask the user** to download the URL in a browser and save it at the cache path, then continue.
+
+   If none of these works, answer from the catalog summary and TOC only. Say clearly that you
+   couldn't read the document itself, so the answer isn't verified against the spec text.
 
 ### 4. Answer
 
@@ -98,8 +112,8 @@ and the version barely matters, answer from the latest version and say which one
 
 ## Versions FIDO accepts for certification (as of 2026-11-16)
 
-Re-check on fidoalliance.org/certification when dates matter. The catalog page's `status` field
-carries the same information.
+The catalog page's `status` field carries the same information. When dates matter, follow
+"Keeping status current" below.
 
 | Document | Accepted | Notes |
 |---|---|---|
@@ -114,6 +128,39 @@ carries the same information.
 Some ACTIVE certification documents are published with Review Draft file names (SR 1.7,
 Biometrics 5.0, Server Requirements 2.3). FIDO's certification pages list them as active, so treat
 them as current.
+
+## Keeping status current
+
+The catalog is a snapshot; its build date is `built` in `catalog/catalog.json`. FIDO changes these
+lists rarely, but the answer must still reflect the live state. Check the live sources when **any**
+of these holds:
+
+- the answer depends on what is certifiable, active or sunset, or on a date or deadline;
+- a sunset date in the table above has already passed;
+- the catalog is more than 3 months old;
+- the user mentions a version or document the catalog doesn't have.
+
+Live sources (fetch with the web fetch tool or `curl`):
+
+| What | Where |
+|---|---|
+| Spec versions accepted, sunset rules, Functional Certification Policy | https://fidoalliance.org/certification/getting-started/ |
+| Security Requirements, ACL, AROE, Metadata Requirements: active/sunset | https://fidoalliance.org/certification/authenticator-certification-levels/ |
+| Biometrics Requirements and Biometric Certification Policy | https://fidoalliance.org/certification/resource-documentation-biometric/ |
+| FIDO2 Server Requirements | https://fidoalliance.org/certification/functional-certification/functional-certification-servers/ |
+| New spec releases (new `-ps-` folders or files) | https://fidoalliance.org/specs/ (directory listing) |
+| WebAuthn | https://www.w3.org/TR/webauthn/ (latest level) |
+
+How to use them:
+
+1. Compare what the live page says with the catalog `status`. When they differ, the live page wins.
+   Tell the user plainly, e.g. "The catalog (built 2026-11-16) lists SR 1.6 as active until 2027-01-13;
+   FIDO's page now lists it as sunset."
+2. If a newer version exists that the catalog lacks, you can still use it: download it from the
+   live URL with `curl -A "fido-certification-skill/0.1"`, then read it. Say that it isn't
+   catalogued yet, so there's no summary or TOC for it.
+3. Mention once at the end of the answer that the catalog needs a refresh (maintainers: see the
+   repository README, "Updating the catalog"). Don't block the answer on it.
 
 ## Not covered
 
