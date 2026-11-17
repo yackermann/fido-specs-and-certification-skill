@@ -9,12 +9,13 @@ description: Answers questions about FIDO Alliance specifications and FIDO certi
 > Alliance** or W3C. Its summaries are unofficial; the downloaded documents and FIDO's certification
 > pages are authoritative. If a user seems to take you for an official FIDO source, say so.
 
-This skill ships a **catalog** (summary + table of contents for each document version), not the
-documents themselves. When you need the actual text, the script downloads the official file into a
+This skill ships a **catalog**, not the documents themselves. For each document version it holds a
+summary, a **reading guide** (what each part covers, what matters, what is easy to get wrong, related
+documents) and the full table of contents. When you need the actual text, the script downloads the official file into a
 local cache and extracts just the sections you ask for.
 
 - `catalog/INDEX.md`: one line per document, grouped by family. **Read this first.**
-- `catalog/docs/<family>/<doc_id>/<version>_<date>.md`: summary, certification status and full TOC with anchors
+- `catalog/docs/<family>/<doc_id>/<version>_<date>.md`: summary, certification status, reading guide and full TOC with anchors
 - `catalog/catalog.json`: machine-readable list (URLs, sha256, status)
 - `scripts/fido.py`: search, download, section extraction (Python 3 stdlib, no installs)
 - `scripts/mds.py`: browse the FIDO Metadata Service BLOB (see "Metadata Service lookups" below)
@@ -27,8 +28,8 @@ Run the script from the skill folder: `python3 scripts/fido.py <command>`. Comma
 |---|---|
 | `list [--family F] [--all-versions]` | what's available |
 | `versions DOC` | every catalogued version with its status |
-| `search TERMS... [--all-versions]` | search titles, summaries and section titles |
-| `show DOC [--version V]` | the catalog page (summary + TOC) |
+| `search TERMS... [--all-versions]` | search titles, summaries, reading guides and section titles |
+| `show DOC [--version V]` | the catalog page (summary, reading guide, TOC) |
 | `fetch DOC [--version V]` | download the official file, print the local path |
 | `toc DOC [--version V]` | section list of the downloaded document |
 | `section DOC ANCHOR [--version V] [--max-chars N]` | text of one section (by anchor, number like `6.5.5.7`, or title words) |
@@ -60,8 +61,11 @@ and the version barely matters, answer from the latest version and say which one
 ### 2. Find the document and section
 
 1. Read `catalog/INDEX.md` to pick candidate documents.
-2. `fido.py search <terms>` to find sections by title. `fido.py show <doc>` for the summary and full TOC.
-3. Choose the exact section anchors you need.
+2. `fido.py search <terms>` searches titles, summaries, reading guides and section titles.
+3. `fido.py show <doc>` and read the **reading guide**: it says which sections hold the rules you
+   need, what matters in them and which related documents to check. Use it to choose the exact
+   section anchors to read. The guide is orientation, not the source: the answer still comes from
+   the section text you download.
 
 ### 3. Download and read
 

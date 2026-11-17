@@ -82,3 +82,69 @@ as "as of the snapshot" and don't copy fee amounts: say the page lists them.>
 
 Legal-terms and very short pages: 1–3 sentences, no bullets needed. Never invent anchors, steps,
 programme names or numbers. If a page contradicts another page or a spec, say so briefly.
+
+## Reading guide (spec catalog pages)
+
+Every spec catalog page also gets a `## Reading guide` section, placed **after the Summary block and
+before `## Table of contents`** (the builder preserves everything in between). The Summary says what
+the document is; the reading guide is the analysis a senior FIDO engineer would give a colleague
+before they open the document: where to look, what matters, what is easy to get wrong. It is what
+lets the skill pick the right sections without reading the whole document.
+
+Read the document properly first (`fido.py toc`, then `fido.py section` on the main chapters; for
+PDFs, `pipeline/.venv/bin/python fido-spec-and-certification/scripts/fido.py text <doc> --version <v>`
+and read the text file). Base every point on text you read.
+
+### Latest version of a lineage (`latest_in_lineage: true`)
+
+```
+## Reading guide
+
+**Start here:** <2–4 sections to read first to get oriented, each with § and `#anchor`, and why>
+
+**Section by section:**
+- §<n> <title> `#<anchor>`: <what it defines and what matters in it: the key normative rules
+  (MUST/SHALL), the data structures or state involved, ordering and error behaviour, options that
+  change behaviour, how it connects to other sections>
+- ... (cover every major part of the document; 6–20 bullets depending on size. Group small
+  sections; split big ones such as individual CTAP commands or WebAuthn ceremony steps.)
+
+**What matters most:** <the requirements implementers most often get wrong or that certification
+testing leans on, and the decisions the document leaves to the implementer. 3–8 bullets, each with
+§ and anchor.>
+
+**Watch out for:** <ambiguities, deprecated or legacy parts, informative-only sections that look
+normative, known errata, contradictions with other documents. Omit if nothing real.>
+
+**Related documents:** <catalog doc_ids (with version when it matters) and why you'd read them
+alongside this one>
+```
+
+Length scales with the document: 300–600 words for short documents, up to ~1500 for CTAP, WebAuthn,
+UAF Protocol, FDO and Security Requirements.
+
+### Older versions
+
+```
+## Reading guide
+
+**Use this version when:** <who still needs it: certification rules, deployed base, L3/L3+ etc.>
+
+**Differences from <neighbour or latest version>:** <specific sections added, removed or changed,
+with § and anchor in THIS page's TOC; behaviour changes, not editorial ones. If you could not
+verify a difference, say so.>
+
+**Section by section:** <only the parts that differ or matter specifically for this version;
+otherwise say "structure as in <latest version>; see that page's reading guide">
+```
+
+100–400 words.
+
+### Rules (in addition to the general rules above)
+
+- Every `#anchor` must exist in this page's TOC; every § number must match it.
+- Paraphrase. Name fields, commands, error codes and requirement IDs exactly; quote at most a few
+  words.
+- Normative weight matters: say MUST / SHOULD / MAY where the document does, and flag
+  informative sections.
+- No guessing. If something isn't in the text you read, leave it out.

@@ -370,7 +370,7 @@ def cmd_search(cat, a):
         if score:
             rows.append((score, d, hits))
     if not rows:
-        print("no matches in titles, summaries or section titles")
+        print("no matches in titles, summaries, reading guides or section titles")
     for score, d, hits in sorted(rows, key=lambda r: -r[0])[:12]:
         print(f"\n{label(d)} — {d['title']}  (score {score})")
         for h in hits[:8]:
