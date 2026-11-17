@@ -32,6 +32,15 @@ SCOPE.md                     the approved document list
   `.claude/skills/` (project).
 - **claude.ai:** zip the `fido-spec-and-certification/` folder and upload it under Settings → Capabilities → Skills.
   Downloads need network access to fidoalliance.org and w3.org.
+- **Codex:** copy the `fido-spec-and-certification/` folder into `~/.agents/skills/` (personal) or
+  `.agents/skills/` in a repository. Codex's default `workspace-write` sandbox has no network access
+  and limits writes to the workspace, so either approve the download commands when Codex asks to run
+  them outside the sandbox, or enable network access, and consider setting `FIDO_SPEC_CACHE` to a
+  folder inside the workspace (or adding the cache folder to `sandbox_workspace_write.writable_roots`).
+- **Other agents** that read `SKILL.md` skills (the open Agent Skills format) and can run Python 3
+  should work the same way.
+
+The scripts need Python 3.9+ and nothing else; `pypdf` is optional, for PDF-only documents.
 
 Downloaded documents are cached in `~/.cache/fido-spec-and-certification` (override with `FIDO_SPEC_CACHE`).
 The MDS BLOB is cached in its `mds/` subfolder. FIDO allows two BLOB downloads per day, so

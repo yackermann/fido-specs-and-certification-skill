@@ -52,7 +52,7 @@ FIDO answers depend heavily on role, protocol and version. Before reading specs,
 
 Infer what you can from the request (a question about `authenticatorClientPIN` is CTAP; a question
 about "the vendor questionnaire" is SR). Ask the rest in **one** short message, offering the likely
-options (use the AskUserQuestion tool when it's available). If the question is purely explanatory
+options (use your client's structured-question tool if it has one). If the question is purely explanatory
 and the version barely matters, answer from the latest version and say which one you used.
 
 ### 2. Find the document and section
@@ -69,14 +69,15 @@ and the version barely matters, answer from the latest version and say which one
    sections over one huge one. Raise `--max-chars` only when needed.
 3. For PDF-only documents (for example the Functional Certification Policy), run `text`. If `pypdf`
    is installed, it writes a text file with `[page N]` markers that you can grep. Otherwise, open the
-   PDF path from `fetch` with the Read tool, passing `pages`. If that also fails, suggest `pip install pypdf`.
+   PDF path from `fetch` with a file-reading tool that handles PDFs, if your client has one (for
+   example Claude's Read tool with `pages`). If neither works, suggest `pip install pypdf`.
 4. If the download fails, work down this list. The sandbox may block the domain (claude.ai and
    some managed environments allow only listed domains), the site may reject the client, or the
    machine may be offline.
    1. **curl** (when you have a shell), saving to the cache path the script printed:
       `curl -sL -A "fido-spec-and-certification-skill/0.1" -o "<cache path>" "<url>"`. Then rerun the
       `fido.py` command; it picks up the cached file and checks the hash.
-   2. **Web fetch tool** (it runs outside the code sandbox). Fetch the document URL from the catalog
+   2. **A web fetch or browsing tool**, if your client has one (it usually runs outside the code sandbox). Fetch the document URL from the catalog
       page and ask for the **exact text** of the section you need, by number and title from the
       catalog TOC (for example "the verbatim text of §6.5.5.7 Operations to Obtain a
       pinUvAuthToken"). URL fragments (`#anchor`) are usually ignored, so name the section. The tool
@@ -135,6 +136,20 @@ Rules:
 - The BLOB is FIDO data, not this skill's: quote fields as they are, and don't infer
   certification beyond what the status reports say.
 
+## Running in a sandbox (Codex, managed environments)
+
+The scripts need Python 3 only and work in any agent that can run shell commands (Claude Code,
+claude.ai, Codex and others). Sandboxes change two things:
+
+- **Network.** Downloads fail when the sandbox blocks network access; the scripts then say so. Ask
+  the user to approve running the command outside the sandbox, or to enable network access for
+  the session (in Codex, network access is off in the default `workspace-write` mode), then
+  rerun. Meanwhile use the fallbacks in step 3.4.
+- **Cache folder.** `fido.py` uses `~/.cache/fido-spec-and-certification` and falls back to a temp
+  folder when that isn't writable; documents already downloaded there are still read. Suggest
+  setting `FIDO_SPEC_CACHE` to a folder inside the workspace if downloads should survive the session.
+  `mds.py update` has no fallback, because its pull log must persist: it explains the options instead.
+
 ## Which documents apply (certification map)
 
 | Goal | Read |
@@ -180,7 +195,7 @@ of these holds:
 - the catalog is more than 3 months old;
 - the user mentions a version or document the catalog doesn't have.
 
-Live sources (fetch with the web fetch tool or `curl`):
+Live sources (fetch with a web fetch or browsing tool, or `curl`):
 
 | What | Where |
 |---|---|

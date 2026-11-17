@@ -25,10 +25,12 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
 CACHE = Path(os.environ.get("FIDO_SPEC_CACHE", Path.home() / ".cache" / "fido-spec-and-certification")) / "mds"
+# No temp-folder fallback here: the pull log must persist, or the two-per-day limit could be exceeded.
 UA = "fido-spec-and-certification-skill/0.1 (mds)"
 MDS_URL = "https://mds.fidoalliance.org/"
 LEGAL = "https://fidoalliance.org/metadata/metadata-legal-terms/"
@@ -225,9 +227,15 @@ def recent_pulls() -> list[dt.datetime]:
     return [p for p in pulls() if now() - p < WINDOW]
 
 
-def log_pull() -> None:
-    keep = recent_pulls() + [now()]
-    LOG.write_text(json.dumps([p.isoformat(timespec="seconds") for p in keep]))
+def log_pull() -> dt.datetime:
+    t = now()
+    LOG.write_text(json.dumps([p.isoformat(timespec="seconds") for p in recent_pulls() + [t]]))
+    return t
+
+
+def unlog_pull(t: dt.datetime) -> None:
+    LOG.write_text(json.dumps([p.isoformat(timespec="seconds") for p in recent_pulls()
+                               if p.isoformat(timespec="seconds") != t.isoformat(timespec="seconds")]))
 
 
 def meta() -> dict:
@@ -245,7 +253,15 @@ def load_blob() -> dict:
 
 
 def cmd_update(a) -> None:
-    CACHE.mkdir(parents=True, exist_ok=True)
+    try:
+        CACHE.mkdir(parents=True, exist_ok=True)
+        (CACHE / ".write-test").write_text("")
+        (CACHE / ".write-test").unlink()
+    except OSError as e:
+        die(f"cannot write to {CACHE} ({e}); a sandbox may be blocking it. Options: allow writes there "
+            "(Codex: add the folder to sandbox_workspace_write.writable_roots, or approve running this command "
+            "outside the sandbox), or set FIDO_SPEC_CACHE to a persistent writable folder. The pull log lives in "
+            "this folder, so a new folder starts a new count: FIDO's limit of two downloads per day still applies.")
     m = meta()
     if m.get("pulled") and not a.force:
         age = now() - dt.datetime.fromisoformat(m["pulled"])
@@ -259,14 +275,23 @@ def cmd_update(a) -> None:
         nxt = min(rp) + WINDOW
         die(f"MDS download limit reached ({MAX_PULLS} per 24 h). Next download allowed after "
             f"{nxt:%Y-%m-%d %H:%M} UTC." + (" The cached BLOB is still usable." if BLOB.exists() else ""))
-    log_pull()  # count the attempt before sending, so failed or partial downloads also count
+    attempt = log_pull()  # count the attempt before sending, so failed or partial downloads also count
     print(f"Downloading {MDS_URL} (pull {len(rp) + 1} of {MAX_PULLS} in 24 h)…", file=sys.stderr)
     req = urllib.request.Request(MDS_URL, headers={"User-Agent": UA})
     try:
-        with urllib.request.urlopen(req, timeout=120) as r:
+        r = urllib.request.urlopen(req, timeout=120)
+    except urllib.error.HTTPError as e:  # the server answered: counts as a pull
+        die(f"download failed: HTTP {e.code} {e.reason}")
+    except (urllib.error.URLError, OSError) as e:  # no answer (offline, DNS, sandbox): doesn't count
+        unlog_pull(attempt)
+        die(f"download failed before reaching the server: {e}. This attempt was not counted. "
+            "If you are in a sandbox (for example Codex's default workspace-write mode), network access may be "
+            "off: rerun outside the sandbox with the user's approval, or have the user enable network access.")
+    try:
+        with r:
             jwt = r.read().decode().strip()
-    except Exception as e:  # noqa: BLE001
-        die(f"download failed: {e}")
+    except Exception as e:  # noqa: BLE001  (connection dropped mid-download: counts)
+        die(f"download interrupted: {e}")
     try:
         chain = verify_jwt(jwt)
     except (ValueError, KeyError, IndexError) as e:

@@ -20,7 +20,8 @@ DOC is a doc_id (e.g. fido-client-to-authenticator-protocol) or a unique part of
 (e.g. "ctap", "metadata-statement"). V is a version like 2.2; add "-errata" for an
 errata edition (2.1-errata). Without --version the latest PS edition is used.
 
-Cache: $FIDO_SPEC_CACHE or ~/.cache/fido-spec-and-certification
+Cache: $FIDO_SPEC_CACHE, else ~/.cache/fido-spec-and-certification, else (if that isn't writable,
+e.g. in a sandbox) $TMPDIR/fido-spec-and-certification
 """
 from __future__ import annotations
 
@@ -37,7 +38,52 @@ from pathlib import Path
 
 SKILL = Path(__file__).resolve().parent.parent
 CATALOG = SKILL / "catalog"
-CACHE = Path(os.environ.get("FIDO_SPEC_CACHE", Path.home() / ".cache" / "fido-spec-and-certification"))
+HOME_CACHE = Path.home() / ".cache" / "fido-spec-and-certification"
+SANDBOX_HINT = ("If you are in a sandbox (for example Codex's default workspace-write mode), network access may be "
+                "off: rerun the command outside the sandbox with the user's approval, or have the user enable network "
+                "access for the session.")
+
+
+def writable(d: Path) -> bool:
+    try:
+        d.mkdir(parents=True, exist_ok=True)
+        probe = d / ".write-test"
+        probe.write_text("")
+        probe.unlink()
+        return True
+    except OSError:
+        return False
+
+
+def pick_cache() -> Path:
+    """$FIDO_SPEC_CACHE if set; else ~/.cache/...; else a temp folder (sandboxes often block writes to $HOME)."""
+    if os.environ.get("FIDO_SPEC_CACHE"):
+        return Path(os.environ["FIDO_SPEC_CACHE"])
+    if writable(HOME_CACHE):
+        return HOME_CACHE
+    tmp = Path(os.environ.get("TMPDIR", "/tmp")) / "fido-spec-and-certification"
+    if writable(tmp):
+        print(f"note: {HOME_CACHE} is not writable (sandboxed?), caching downloads in {tmp} instead. "
+              "Set FIDO_SPEC_CACHE to a writable folder to keep downloads between sessions.", file=sys.stderr)
+        return tmp
+    return HOME_CACHE  # reads may still work; writes will fail with a clear message
+
+
+CACHE = pick_cache()
+
+
+def derived(p: Path, suffix: str) -> Path:
+    """Path for a file derived from a download (text extracts). Next to the download if that folder is
+    writable; otherwise the same relative path under the writable cache."""
+    out = p.with_suffix(suffix)
+    if out.exists() or os.access(p.parent, os.W_OK):
+        return out
+    try:
+        alt = CACHE / p.relative_to(HOME_CACHE)
+    except ValueError:
+        return out
+    alt.parent.mkdir(parents=True, exist_ok=True)
+    return alt.with_suffix(suffix)
 UA = "fido-spec-and-certification-skill/0.1"
 ALIASES = {
     "ctap": "fido-client-to-authenticator-protocol",
@@ -119,13 +165,20 @@ def content_sha256(data: bytes) -> str:
 def local_path(d: dict) -> Path:
     u = urllib.parse.urlsplit(d["url"])
     path = u.path + ("index.html" if u.path.endswith("/") else "")
-    return CACHE / u.netloc / urllib.parse.unquote(path).lstrip("/")
+    rel = Path(u.netloc) / urllib.parse.unquote(path).lstrip("/")
+    if not (CACHE / rel).exists() and (HOME_CACHE / rel).exists():
+        return HOME_CACHE / rel  # readable copy from an earlier, unsandboxed run
+    return CACHE / rel
 
 
 def fetch(d: dict, quiet: bool = False) -> Path:
     p = local_path(d)
     if not p.exists():
-        p.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            p.parent.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            die(f"cannot write to the cache ({e}). Set FIDO_SPEC_CACHE to a writable folder, for example "
+                "one inside the current workspace, and rerun.")
         req = urllib.request.Request(d["url"], headers={"User-Agent": UA})
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
@@ -135,7 +188,8 @@ def fetch(d: dict, quiet: bool = False) -> Path:
                 f"cache path: {p}\n"
                 "Fallbacks (see SKILL.md, step 3.4): 1) curl -sL -A \"" + UA + f"\" -o \"{p}\" \"{d['url']}\" "
                 "then rerun this command; 2) web fetch tool on the URL, asking for the exact text of the "
-                "section by number and title; 3) ask the user to save the file at the cache path.")
+                "section by number and title; 3) ask the user to save the file at the cache path.\n"
+                + SANDBOX_HINT)
         tmp = p.with_suffix(p.suffix + ".part")
         tmp.write_bytes(data)
         tmp.rename(p)
@@ -228,7 +282,7 @@ class ToText(HTMLParser):
 
 
 def html_text(p: Path) -> str:
-    cached = p.with_suffix(".marked.txt")
+    cached = derived(p, ".marked.txt")
     if cached.exists() and cached.stat().st_mtime >= p.stat().st_mtime:
         return cached.read_text()
     parser = ToText()
@@ -255,7 +309,7 @@ def pretty(text: str) -> str:
 
 def pdf_text(p: Path) -> Path | None:
     """PDF -> text with page markers, using pypdf if it is installed (optional)."""
-    out = p.with_suffix(".txt")
+    out = derived(p, ".txt")
     if out.exists():
         return out
     try:
@@ -371,7 +425,7 @@ def cmd_text(cat, a):
         return
     need_html(d)
     p = fetch(d)
-    out = p.with_suffix(".txt")
+    out = derived(p, ".txt")
     out.write_text(f"{label(d)}\n{d['url']}\n\n" + pretty(html_text(p)))
     print(out)
 
