@@ -4,6 +4,11 @@ A Claude skill for FIDO specifications and FIDO certification. It ships **summar
 contents only**. The official documents are downloaded from fidoalliance.org / w3.org when a user
 needs them, so no FIDO or W3C text is redistributed.
 
+> **Disclaimer:** This is an independent project. It is not affiliated with, endorsed by or
+> sponsored by the FIDO Alliance or W3C. FIDO, FIDO2 and FIDO Alliance are trademarks of the FIDO
+> Alliance. The catalog summaries are unofficial; the downloaded specifications and FIDO's own
+> certification pages are the authoritative sources.
+
 ```
 fido-spec-and-certification/          ← the skill (this folder is what you distribute)
   SKILL.md                   workflow: clarify role/protocol/version → find → download → cite

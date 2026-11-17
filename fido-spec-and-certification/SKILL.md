@@ -5,6 +5,10 @@ description: Answers questions about FIDO Alliance specifications and FIDO certi
 
 # FIDO specifications and certification
 
+> This skill is independent and **not affiliated with, endorsed by or sponsored by the FIDO
+> Alliance** or W3C. Its summaries are unofficial; the downloaded documents and FIDO's certification
+> pages are authoritative. If a user seems to take you for an official FIDO source, say so.
+
 This skill ships a **catalog** (summary + table of contents for each document version), not the
 documents themselves. When you need the actual text, the script downloads the official file into a
 local cache and extracts just the sections you ask for.
@@ -92,7 +96,7 @@ and the version barely matters, answer from the latest version and say which one
   (a requirement sentence, a field name). Don't reproduce sections wholesale.
 - **Never invent** requirement IDs, command codes, error codes or section numbers. If you can't find
   something, say so and show where you looked.
-- This skill is not the FIDO Alliance and not an accredited lab. For binding decisions (eligibility,
+- This skill is not affiliated with the FIDO Alliance and is not an accredited lab. For binding decisions (eligibility,
   fees, timelines, test-tool behaviour), point the user to the FIDO certification team or their lab.
 
 ## Which documents apply (certification map)
