@@ -1,6 +1,6 @@
 ---
 name: fido-spec-and-certification
-description: Answers questions about FIDO Alliance specifications and FIDO certification (CTAP/FIDO2, WebAuthn, UAF, U2F/CTAP1, Metadata Service, Authenticator Security Requirements L1–L3+, Biometric Component certification, FIDO2 server requirements, FDO, CXF). Finds the right document and version, downloads the official file from fidoalliance.org or w3.org on demand, and answers with section-level citations. Use when someone asks what a FIDO spec requires, which documents or levels apply to their product, how to prepare for FIDO certification, what changed between versions, or wants a requirement, command, error code or field explained.
+description: Answers questions about FIDO Alliance specifications and FIDO certification (CTAP/FIDO2, WebAuthn, UAF, U2F/CTAP1, Metadata Service, Authenticator Security Requirements L1–L3+, Biometric Component certification, FIDO2 server requirements, FDO, CXF). Finds the right document and version, downloads the official file from fidoalliance.org or w3.org on demand, and answers with section-level citations. Also browses the FIDO Metadata Service (MDS3) BLOB: look up an authenticator by AAGUID, AAID or name, its certification status, level and metadata statement. Use when someone asks what a FIDO spec requires, which documents or levels apply to their product, how to prepare for FIDO certification, what changed between versions, or wants a requirement, command, error code or field explained.
 ---
 
 # FIDO specifications and certification
@@ -17,6 +17,7 @@ local cache and extracts just the sections you ask for.
 - `catalog/docs/<family>/<doc_id>/<version>_<date>.md`: summary, certification status and full TOC with anchors
 - `catalog/catalog.json`: machine-readable list (URLs, sha256, status)
 - `scripts/fido.py`: search, download, section extraction (Python 3 stdlib, no installs)
+- `scripts/mds.py`: browse the FIDO Metadata Service BLOB (see "Metadata Service lookups" below)
 
 Run the script from the skill folder: `python3 scripts/fido.py <command>`. Commands:
 
@@ -98,6 +99,41 @@ and the version barely matters, answer from the latest version and say which one
   something, say so and show where you looked.
 - This skill is not affiliated with the FIDO Alliance and is not an accredited lab. For binding decisions (eligibility,
   fees, timelines, test-tool behaviour), point the user to the FIDO certification team or their lab.
+
+## Metadata Service lookups (`scripts/mds.py`)
+
+The MDS3 BLOB lists every authenticator with a metadata statement: AAGUID (FIDO2), AAID (UAF) or
+attestation key identifiers (U2F), certification status history with certificate numbers and
+levels, the metadata statement itself and, for FIDO2, `authenticatorGetInfo`. Use it for questions
+like "is this AAGUID certified, and at which level?", "which authenticators are L3+?", "what
+transports or extensions does this key report?".
+
+| Command | Use |
+|---|---|
+| `update [--force]` | download the BLOB, verify its signature, cache it |
+| `info` | BLOB number, `nextUpdate`, download time, pull budget left, counts by protocol and status |
+| `search TERMS... [--status S] [--protocol fido2\|uaf\|u2f] [--limit N]` | find entries by name, AAGUID, AAID, key identifier or certificate number (use `""` to match all) |
+| `show ID [--json] [--icon]` | one entry: identifiers, status reports (newest first), statement fields, getInfo |
+
+Rules:
+
+- **FIDO allows only two BLOB downloads per day.** Only `update` downloads. It refuses when two
+  pulls were made in the last 24 h, and skips the download if the cached BLOB is less than 24 h old
+  (`--force` overrides that skip, not the limit). Every other command reads the cache. Never
+  download the BLOB any other way (curl, web fetch), since that would bypass the counter.
+- **Run `update` only when needed:** no cached BLOB, or `info` says `nextUpdate` has passed, or the
+  user asks for the latest data. Otherwise use the cache and say which BLOB number and download
+  date the answer comes from.
+- **Before the first download, tell the user** that retrieving and using the BLOB means accepting
+  FIDO's MDS legal terms (https://fidoalliance.org/metadata/metadata-legal-terms/).
+- The signature is checked against GlobalSign Root R46, the root FIDO publishes for the BLOB, which
+  is embedded in the script. No system certificate store is used. Revocation (CRL) is not checked.
+  If verification fails, the previous BLOB is kept: say so and don't use the rejected file.
+- The latest status report is the current status. `REVOKED`, `USER_KEY_PHYSICAL_COMPROMISE` and
+  similar statuses matter for relying parties: point them out. For field meanings, cite the
+  Metadata Statement 3.1.1 and MDS 3.1.1 specs (`metadata-statement`, `mds`) as usual.
+- The BLOB is FIDO data, not this skill's: quote fields as they are, and don't infer
+  certification beyond what the status reports say.
 
 ## Which documents apply (certification map)
 

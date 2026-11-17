@@ -16,6 +16,7 @@ fido-spec-and-certification/          ← the skill (this folder is what you dis
   catalog/catalog.json       every document version: URL, sha256, status
   catalog/docs/…/*.md        summary + certification status + TOC with anchors, per version
   scripts/fido.py            list / search / show / fetch / toc / section / text (stdlib only)
+  scripts/mds.py             MDS3 BLOB browser: update / info / search / show (stdlib only)
 pipeline/                    maintainer tools (not distributed)
   crawl_index.py             crawl https://fidoalliance.org/specs/ directory listings
   build_catalog.py           scope rules, download, hash, TOC extraction, catalog pages
@@ -33,6 +34,9 @@ SCOPE.md                     the approved document list
   Downloads need network access to fidoalliance.org and w3.org.
 
 Downloaded documents are cached in `~/.cache/fido-spec-and-certification` (override with `FIDO_SPEC_CACHE`).
+The MDS BLOB is cached in its `mds/` subfolder. FIDO allows two BLOB downloads per day, so
+`mds.py update` keeps a pull log there and refuses a third download within 24 hours. The BLOB's
+signature is verified against GlobalSign Root R46 (the root FIDO publishes), embedded in the script.
 
 ## Scope
 
