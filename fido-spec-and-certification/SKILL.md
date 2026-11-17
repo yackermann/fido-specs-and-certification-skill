@@ -1,6 +1,6 @@
 ---
 name: fido-spec-and-certification
-description: Answers questions about FIDO Alliance specifications and FIDO certification (CTAP/FIDO2, WebAuthn, UAF, U2F/CTAP1, Metadata Service, Authenticator Security Requirements L1–L3+, Biometric Component certification, FIDO2 server requirements, FDO, CXF). Finds the right document and version, downloads the official file from fidoalliance.org or w3.org on demand, and answers with section-level citations. Also browses the FIDO Metadata Service (MDS3) BLOB: look up an authenticator by AAGUID, AAID or name, its certification status, level and metadata statement. Use when someone asks what a FIDO spec requires, which documents or levels apply to their product, how to prepare for FIDO certification, what changed between versions, or wants a requirement, command, error code or field explained.
+description: Answers questions about FIDO Alliance specifications and FIDO certification (CTAP/FIDO2, WebAuthn, UAF, U2F/CTAP1, Metadata Service, Authenticator Security Requirements L1–L3+, Biometric Component certification, FIDO2 server requirements, FDO, CXF). Finds the right document and version, downloads the official file from fidoalliance.org or w3.org on demand, and answers with section-level citations. Also covers the certification programme itself (process, levels, labs, fees pages, interop events, biometric, FDO and identity-verification programmes), the conformance test tools (docs and their public issue tracker, searchable by test ID), the FIDO2 interop web app, and the awesome-webauthn list of libraries and tools. Also browses the FIDO Metadata Service (MDS3) BLOB: look up an authenticator by AAGUID, AAID or name, its certification status, level and metadata statement. Use when someone asks what a FIDO spec requires, which documents or levels apply to their product, how to prepare for FIDO certification, what changed between versions, or wants a requirement, command, error code or field explained.
 ---
 
 # FIDO specifications and certification
@@ -18,6 +18,8 @@ local cache and extracts just the sections you ask for.
 - `catalog/catalog.json`: machine-readable list (URLs, sha256, status)
 - `scripts/fido.py`: search, download, section extraction (Python 3 stdlib, no installs)
 - `scripts/mds.py`: browse the FIDO Metadata Service BLOB (see "Metadata Service lookups" below)
+- `scripts/resources.py` + `catalog/resources/`: certification web pages, conformance tools docs and
+  issues, interop app, awesome-webauthn (see "Certification process, test tools and ecosystem" below)
 
 Run the script from the skill folder: `python3 scripts/fido.py <command>`. Commands:
 
@@ -136,6 +138,51 @@ Rules:
 - The BLOB is FIDO data, not this skill's: quote fields as they are, and don't infer
   certification beyond what the status reports say.
 
+## Certification process, test tools and ecosystem (`scripts/resources.py`)
+
+Specifications say what to implement; these sources say how certification works and how the test
+tools behave. Each web or docs page has a catalog page (summary and outline) and is read live, like
+the specs. Run `python3 scripts/resources.py <command>`:
+
+| Command | Use |
+|---|---|
+| `search TERMS...` | one search across pages, issue titles and awesome-webauthn entries |
+| `list [--source cert\|ctt\|interop]` | all catalogued pages |
+| `show PAGE` | catalog page: summary, outline, linked documents (PDFs, with catalog doc ids when known) |
+| `read PAGE [SECTION]` | live text of the page or one section (cached 7 days, `--refresh` to force) |
+| `issues [TERMS] [--test ID] [--label L] [--state open\|closed]` | the conformance tools issue index |
+| `issue N` | the live issue thread, with the template boilerplate removed |
+| `awesome [TERMS] [--category C] [--badge certified\|conformant]` | libraries, demos, authenticators, tools |
+
+Sources and when to use them:
+
+- **`cert`: fidoalliance.org certification pages.** Process steps, what each level (L1–L3+) requires,
+  companion programmes, labs, fees, interop events, derivative and delta certification, biometric,
+  FDO, DocAuth and Face Verification programmes, MDS terms, certification marks. Use them for "how do I
+  get certified", "what does L2 involve", "how does interop testing work". `read` flags a page whose
+  text changed since the catalog snapshot: then trust the live text and say it changed. Don't quote fee
+  amounts from memory or the catalog; read the fees page live. The certified products directory is a
+  dynamic site that isn't catalogued: point users to https://fidoalliance.org/certification/fido-certified-products/
+  or use `mds.py` for authenticators.
+- **`ctt`: conformance test tools docs.** How to run the FIDO2 server, authenticator and UAF server
+  tests, the conformance test server API that a server under test must expose, test automation, the
+  GetInfo snapshot, FDO pre-interop. Access to the tools themselves requires registering with FIDO.
+- **`issues`: the public conformance tools issue tracker** (850+ issues, titles and metadata in the
+  catalog). When a user reports a failing test, search by test ID first (`issues --test
+  Authr-ClientPin2`), then by words, then read the matching threads. A closed issue with a fix
+  ("fixed in v1.9.3") usually means: update the tool. Say which issue you relied on, link it, and say
+  that tool behaviour is the FIDO tools team's call, not the spec's. The spec still decides what is
+  correct: if a thread and the spec disagree, say so and cite both.
+- **`interop`: the FIDO2 interop web app** a FIDO2 server vendor hosts for interop events. Its
+  README says not to modify it for the event.
+- **`awesome`: awesome-webauthn** (CC0 community list, shipped as data). Use it to suggest libraries,
+  demos and tools. Its `FIDO CERTIFIED` / `FIDO CONFORMANT` badges are the list's own claims
+  (CONFORMANT is self-reported): verify certification on FIDO's certified products list before
+  relying on it.
+
+GitHub's API allows 60 unauthenticated requests per hour (`issue` uses one or two). If the user has
+a token, `GITHUB_TOKEN` raises the limit. When the API fails, use a web fetch tool on the issue URL.
+
 ## Running in a sandbox (Codex, managed environments)
 
 The scripts need Python 3 only and work in any agent that can run shell commands (Claude Code,
@@ -219,5 +266,6 @@ How to use them:
 
 ## Not covered
 
-Member-only material (test tools, test-tool output, interop event details), the fee schedule, and
-documents outside the catalog. Say so, and point the user to fidoalliance.org.
+The conformance tools themselves (registration required), member-only material (test-tool output,
+interop event logistics), FIDO's certified products directory (dynamic site), and documents outside
+the catalog. Say so, and point the user to fidoalliance.org.

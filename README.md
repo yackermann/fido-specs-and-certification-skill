@@ -17,11 +17,14 @@ fido-spec-and-certification/          ← the skill (this folder is what you dis
   catalog/docs/…/*.md        summary + certification status + TOC with anchors, per version
   scripts/fido.py            list / search / show / fetch / toc / section / text (stdlib only)
   scripts/mds.py             MDS3 BLOB browser: update / info / search / show (stdlib only)
+  scripts/resources.py       certification pages, conformance tools docs + issues, interop app, awesome-webauthn
+  catalog/resources/         resource pages (summary + outline), issues.json, awesome.json
 pipeline/                    maintainer tools (not distributed)
   crawl_index.py             crawl https://fidoalliance.org/specs/ directory listings
   build_catalog.py           scope rules, download, hash, TOC extraction, catalog pages
   certification_sources.json curated ACTIVE certification documents (not PS-labelled)
   make_index.py              INDEX.md + SCOPE.md
+  build_resources.py         crawl certification pages, GitHub docs, issue index, awesome-webauthn
   SUMMARY_GUIDE.md           how summaries are written
 SCOPE.md                     the approved document list
 ```
@@ -55,6 +58,13 @@ The certification documents FIDO lists as ACTIVE are added from `pipeline/certif
 (Security Requirements 1.5.1/1.6/1.7 and companions, Biometrics Requirements 4.1/5.0, certification
 policies, FIDO2 Server Requirements, WebAuthn L2/L3). See `SCOPE.md` for the full list.
 
+Resources (`catalog/resources/`): the fidoalliance.org certification pages (crawled from
+https://fidoalliance.org/fido-certification/), the docs and issue tracker of
+https://github.com/fido-alliance/conformance-test-tools-resources, the README of
+https://github.com/fido-alliance/fido2-interop-webapp, and https://github.com/yackermann/awesome-webauthn
+(CC0, shipped as data). Web and docs pages ship as summaries and outlines and are read live; the issue
+index holds titles and metadata only.
+
 ## Updating the catalog
 
 ```bash
@@ -64,6 +74,8 @@ python3 pipeline/crawl_index.py > pipeline/out/specs-index.json          # disco
 python3 pipeline/build_catalog.py                                         # pages + catalog.json (keeps summaries)
 # write summaries for new pages (pipeline/SUMMARY_GUIDE.md), then:
 python3 pipeline/make_index.py
+python3 pipeline/build_resources.py                                     # resources (keeps summaries; GITHUB_TOKEN optional)
+# write summaries for new resource pages (pipeline/SUMMARY_GUIDE.md, "Resource pages")
 git diff fido-spec-and-certification/catalog                                       # review, commit, tag e.g. catalog-2026.11
 ```
 

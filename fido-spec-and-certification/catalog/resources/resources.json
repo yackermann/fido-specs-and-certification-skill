@@ -1,0 +1,3280 @@
+{
+ "built": "2026-11-17",
+ "sources": {
+  "cert": {
+   "title": "FIDO Alliance certification programme pages",
+   "url": "https://fidoalliance.org/fido-certification/"
+  },
+  "ctt": {
+   "title": "Conformance test tools resources (docs; issues via `issues`)",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources",
+   "commit": "a245e6cd5204c262684e184a060b77939846a16d"
+  },
+  "interop": {
+   "title": "FIDO2 interop web app",
+   "url": "https://github.com/fido-alliance/fido2-interop-webapp",
+   "commit": "f5e49ed043cd6b7ec0cc10837e2b4cc352f47338"
+  }
+ },
+ "pages": [
+  {
+   "id": "fido-certification",
+   "source": "cert",
+   "title": "FIDO Certification",
+   "url": "https://fidoalliance.org/fido-certification/",
+   "raw_url": "https://fidoalliance.org/fido-certification/",
+   "kind": "html",
+   "sha256": "b07b7fa52de8bd4f3a557729d7d78b9fff05bdf464a9fe177a9baeba2a0ae19a",
+   "headings": [
+    [
+     1,
+     "FIDO Certification",
+     "fido-certification"
+    ],
+    [
+     2,
+     "Certification Programs",
+     "certification-programs"
+    ],
+    [
+     2,
+     "FIDO Certification Resources",
+     "fido-certification-resources"
+    ],
+    [
+     3,
+     "FIDO Certified Products",
+     "fido-certified-products"
+    ],
+    [
+     3,
+     "FIDO Certified Showcase",
+     "fido-certified-showcase"
+    ],
+    [
+     3,
+     "FIDO Certified FDO Products",
+     "fido-certified-fdo-products"
+    ],
+    [
+     3,
+     "FIDO Certified IDV Face Verification Products",
+     "fido-certified-idv-face-verification-products"
+    ],
+    [
+     3,
+     "FIDO Accredited Laboratories",
+     "fido-accredited-laboratories"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fido-certification.md"
+  },
+  {
+   "id": "fido-device-onboard-fido-certified-products",
+   "source": "cert",
+   "title": "FIDO Certified Device Onboard (FDO) Products",
+   "url": "https://fidoalliance.org/certification/fido-device-onboard/fido-certified-products/",
+   "raw_url": "https://fidoalliance.org/certification/fido-device-onboard/fido-certified-products/",
+   "kind": "html",
+   "sha256": "91c5fc66eb47f431bef0b25d7aac235560dca703f30f73c25e7a4a8e4f25d600",
+   "headings": [
+    [
+     1,
+     "FIDO® Certified FDO Products",
+     "fido-certified-fdo-products"
+    ],
+    [
+     3,
+     "ASRock Industrial Computer Corporation",
+     "asrock-industrial-computer-corporation"
+    ],
+    [
+     3,
+     "VinCSS JSC",
+     "vincss-jsc"
+    ],
+    [
+     3,
+     "VinCSS JSC",
+     "vincss-jsc-1"
+    ],
+    [
+     3,
+     "VinCSS JSC",
+     "vincss-jsc-2"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fido-device-onboard-fido-certified-products.md"
+  },
+  {
+   "id": "metadata",
+   "source": "cert",
+   "title": "FIDO Metadata Service (MDS) Overview",
+   "url": "https://fidoalliance.org/metadata/",
+   "raw_url": "https://fidoalliance.org/metadata/",
+   "kind": "html",
+   "sha256": "ed7ac2b8fa36c1d0f3709a9dfe81ad928e43917b41754e226d8a29ada7d5924c",
+   "headings": [
+    [
+     1,
+     "FIDO Alliance Metadata Service",
+     "fido-alliance-metadata-service"
+    ],
+    [
+     2,
+     "How it Works",
+     "how-it-works"
+    ],
+    [
+     2,
+     "Get started",
+     "get-started"
+    ],
+    [
+     3,
+     "Resources for Relying Parties and Developers",
+     "resources-for-relying-parties-and-developers"
+    ],
+    [
+     4,
+     "MDS Implementation",
+     "mds-implementation"
+    ],
+    [
+     4,
+     "Developer Resources",
+     "developer-resources"
+    ],
+    [
+     4,
+     "Policy and Licensing",
+     "policy-and-licensing"
+    ],
+    [
+     3,
+     "Resources for Authenticator Vendors",
+     "resources-for-authenticator-vendors"
+    ],
+    [
+     4,
+     "Policy",
+     "policy"
+    ],
+    [
+     2,
+     "MDS Updates Sign-Up",
+     "mds-updates-sign-up"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/metadata.md"
+  },
+  {
+   "id": "metadata-submission-terms-for-authenticator-vendors-2",
+   "source": "cert",
+   "title": "Metadata Submission Terms (for Authenticator Vendors)",
+   "url": "https://fidoalliance.org/metadata-submission-terms-for-authenticator-vendors-2/",
+   "raw_url": "https://fidoalliance.org/metadata-submission-terms-for-authenticator-vendors-2/",
+   "kind": "html",
+   "sha256": "a5b66ef729d98d8d91282c4bc26f46926f59da099dd7cf1a2e9bb1ef87f3ae1b",
+   "headings": [
+    [
+     1,
+     "Metadata Submission Terms (for Authenticator Vendors)",
+     "metadata-submission-terms-for-authenticator-vendors"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/metadata-submission-terms-for-authenticator-vendors-2.md"
+  },
+  {
+   "id": "metadata-usage-terms-for-relying-parties-or-service-providers-2",
+   "source": "cert",
+   "title": "Metadata Usage Terms (for Relying Parties or Service Providers)",
+   "url": "https://fidoalliance.org/metadata-usage-terms-for-relying-parties-or-service-providers-2/",
+   "raw_url": "https://fidoalliance.org/metadata-usage-terms-for-relying-parties-or-service-providers-2/",
+   "kind": "html",
+   "sha256": "37c57963d066dc9c0f9102d61e7ffcaeb41b16bc223bda765ffca89dba259fb3",
+   "headings": [
+    [
+     1,
+     "Metadata Usage Terms (for Relying Parties or Service Providers)",
+     "metadata-usage-terms-for-relying-parties-or-service-providers"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/metadata-usage-terms-for-relying-parties-or-service-providers-2.md"
+  },
+  {
+   "id": "metadata-usage-terms-for-developers",
+   "source": "cert",
+   "title": "Metadata Usage Terms (for Developers)",
+   "url": "https://fidoalliance.org/metadata-usage-terms-for-developers/",
+   "raw_url": "https://fidoalliance.org/metadata-usage-terms-for-developers/",
+   "kind": "html",
+   "sha256": "987b18c9be27b63980998d4da25f1441adf6a14d73fb8ae94b783b8e136414c8",
+   "headings": [
+    [
+     1,
+     "Metadata Usage Terms (for Developers)",
+     "metadata-usage-terms-for-developers"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/metadata-usage-terms-for-developers.md"
+  },
+  {
+   "id": "metadata-legal-terms",
+   "source": "cert",
+   "title": "MDS Legal Terms",
+   "url": "https://fidoalliance.org/metadata-legal-terms/",
+   "raw_url": "https://fidoalliance.org/metadata-legal-terms/",
+   "kind": "html",
+   "sha256": "a129296d7c81484dc5031a864269f90c7e226a6e52cfb1659a995c953fc63ae2",
+   "headings": [
+    [
+     1,
+     "MDS Legal Terms",
+     "mds-legal-terms"
+    ]
+   ],
+   "links": [
+    [
+     ", PDF",
+     "https://fidoalliance.org/wp-content/uploads/2022/08/MetadataSubmissionTerms_MDS3_approved20200130.pdf"
+    ],
+    [
+     ", PDF",
+     "https://fidoalliance.org/wp-content/uploads/2022/08/MetadataUsageDeveloperTerms_Revised_MDS3_08020222.pdf"
+    ],
+    [
+     ", PDF",
+     "https://fidoalliance.org/wp-content/uploads/2022/08/MetadataUsageRP-SPTerms_Revised_MDS3_approved20200130.pdf"
+    ]
+   ],
+   "page": "pages/cert/metadata-legal-terms.md"
+  },
+  {
+   "id": "fido-certified-showcase",
+   "source": "cert",
+   "title": "FIDO Certified Showcase: Member Solutions",
+   "url": "https://fidoalliance.org/fido-certified-showcase/",
+   "raw_url": "https://fidoalliance.org/fido-certified-showcase/",
+   "kind": "html",
+   "sha256": "701a273dd8982f02fe2571e022d1c2de354071f66aa906c154f6a4aafb331bce",
+   "headings": [
+    [
+     1,
+     "FIDO Certified Showcase",
+     "fido-certified-showcase"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fido-certified-showcase.md"
+  },
+  {
+   "id": "mark-usage",
+   "source": "cert",
+   "title": "FIDO Certification Marks Usage Guidelines",
+   "url": "https://fidoalliance.org/certification/mark-usage/",
+   "raw_url": "https://fidoalliance.org/certification/mark-usage/",
+   "kind": "html",
+   "sha256": "39cfacfb34b42a5d1d0a2a2c2cbd8fdf61b22b977028df51e9049e3e81caaf59",
+   "headings": [
+    [
+     1,
+     "FIDO Certification Mark Usage",
+     "fido-certification-mark-usage"
+    ],
+    [
+     2,
+     "FIDO Certification Mark Violations",
+     "fido-certification-mark-violations"
+    ]
+   ],
+   "links": [
+    [
+     "s wishing to use the FIDO certification marks must complete and sign the Trademark License Agreement",
+     "https://fidoalliance.org/wp-content/uploads/2023/12/FIDO-Trademark-License-Agreement.pdf"
+    ],
+    [
+     "mailto:certification@fidoalliance.org>. A Japanese",
+     "https://fidoalliance.org/wp-content/uploads/2024/09/FIDO-Trademark-License-Agreement-v3.10-Japanese_Final.pdf"
+    ]
+   ],
+   "page": "pages/cert/mark-usage.md"
+  },
+  {
+   "id": "getting-started",
+   "source": "cert",
+   "title": "Getting Started",
+   "url": "https://fidoalliance.org/certification/getting-started/",
+   "raw_url": "https://fidoalliance.org/certification/getting-started/",
+   "kind": "html",
+   "sha256": "ee90385aee6c55e0e6a7be428740e0ead2d8159c4314b6dd834850086ed944e7",
+   "headings": [
+    [
+     1,
+     "Getting Started",
+     "getting-started"
+    ],
+    [
+     3,
+     "Supported Specification Versions",
+     "supported-specification-versions"
+    ],
+    [
+     3,
+     "Functional Certification Policy Versions",
+     "functional-certification-policy-versions"
+    ],
+    [
+     3,
+     "Authenticator Certification Policy and Requirements",
+     "authenticator-certification-policy-and-requirements"
+    ]
+   ],
+   "links": [
+    [
+     "1.3.9",
+     "https://fidoalliance.org/wp-content/uploads/2021/10/Functional_Certification_Program_Policy_v1.3.9_FINAL.pdf"
+    ],
+    [
+     "1.3.8",
+     "https://fidoalliance.org/wp-content/uploads/2021/03/Functional_Certification_Program_Policy_v1.3.8_10202020_FINAL.pdf"
+    ],
+    [
+     "1.3.7",
+     "https://fidoalliance.org/wp-content/uploads/2019/07/Functional_Certification_Program_Policy_v1.3.7_09252018_FINAL.pdf"
+    ],
+    [
+     "1.3.6",
+     "https://fidoalliance.org/wp-content/uploads/Functional_Certification_Program_Policy_v1.3.6_08132018_FINAL.pdf"
+    ],
+    [
+     "1.3.4",
+     "https://fidoalliance.org/wp-content/uploads/Functional_Certification_Program_Policy_v1.3.4_20180306_FINAL.pdf"
+    ],
+    [
+     "1.3.3",
+     "https://fidoalliance.org/wp-content/uploads/Functional_Certification_Program_Policy_v1.3.3.pdf"
+    ],
+    [
+     "1.3.2",
+     "https://fidoalliance.org/wp-content/uploads/Functional_Certification_Program_Policy_v1.3.2.pdf"
+    ],
+    [
+     "1.3.1",
+     "https://fidoalliance.org/wp-content/uploads/Functional_Certification_Program_Policy_v1.3.1-2.pdf"
+    ],
+    [
+     "1.3.0",
+     "https://fidoalliance.org/wp-content/uploads/FunctionalCertificationProgramPolicy_v1.3.0.pdf"
+    ]
+   ],
+   "page": "pages/cert/getting-started.md"
+  },
+  {
+   "id": "laboratory-overview",
+   "source": "cert",
+   "title": "FIDO Accredited Laboratories Overview",
+   "url": "https://fidoalliance.org/laboratory-overview/",
+   "raw_url": "https://fidoalliance.org/laboratory-overview/",
+   "kind": "html",
+   "sha256": "d261cff01de2a0ac4db0fb80aeecb9984ca08c3313e02ba93e05e12d52b7d671",
+   "aliases": [
+    "https://fidoalliance.org/certification/identity-verification/document-authenticity/accredited-labs/"
+   ],
+   "headings": [
+    [
+     1,
+     "FIDO Accredited Laboratories",
+     "fido-accredited-laboratories"
+    ],
+    [
+     2,
+     "FIDO Accredited Lab Finder",
+     "fido-accredited-lab-finder"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/laboratory-overview.md"
+  },
+  {
+   "id": "certification-maintenance-and-updates",
+   "source": "cert",
+   "title": "Certification Maintenance and Updates",
+   "url": "https://fidoalliance.org/certification/certification-maintenance-and-updates/",
+   "raw_url": "https://fidoalliance.org/certification/certification-maintenance-and-updates/",
+   "kind": "html",
+   "sha256": "50bd1b7c04ed721e7202002322fe7caf91e8f3a84e0305af8c433295ae409bf8",
+   "headings": [
+    [
+     1,
+     "Certification Maintenance and Updates",
+     "certification-maintenance-and-updates"
+    ],
+    [
+     2,
+     "Description of Evaluation of Changes",
+     "description-of-evaluation-of-changes"
+    ],
+    [
+     2,
+     "FIDO Impact Analysis Report Review Process",
+     "fido-impact-analysis-report-review-process"
+    ],
+    [
+     2,
+     "Derivative Certification Process",
+     "derivative-certification-process"
+    ],
+    [
+     3,
+     "NON-INTERFERING Change",
+     "non-interfering-change"
+    ],
+    [
+     2,
+     "Delta Certification Process",
+     "delta-certification-process"
+    ],
+    [
+     3,
+     "MINOR Change",
+     "minor-change"
+    ],
+    [
+     2,
+     "Recertification Process",
+     "recertification-process"
+    ],
+    [
+     3,
+     "MAJOR Change",
+     "major-change"
+    ]
+   ],
+   "links": [
+    [
+     "The vendor submits the completed FIAR report",
+     "https://fidoalliance.org/wp-content/uploads/2021/07/FIDO_IAR_v1.0_RELEASE.pdf"
+    ]
+   ],
+   "page": "pages/cert/certification-maintenance-and-updates.md"
+  },
+  {
+   "id": "derivative-certification",
+   "source": "cert",
+   "title": "Derivative Certification",
+   "url": "https://fidoalliance.org/certification/certification-maintenance-and-updates/derivative-certification/",
+   "raw_url": "https://fidoalliance.org/certification/certification-maintenance-and-updates/derivative-certification/",
+   "kind": "html",
+   "sha256": "aae154028f5d2912c24c54b35af41688884e6e90440d9174375570e819a6855e",
+   "headings": [
+    [
+     1,
+     "Derivative Certification",
+     "derivative-certification"
+    ],
+    [
+     3,
+     "Derivative Scenarios",
+     "derivative-scenarios"
+    ],
+    [
+     3,
+     "Bulk Derivative (Optional)",
+     "bulk-derivative-optional"
+    ],
+    [
+     3,
+     "Submitting a Derivative Certification Request",
+     "submitting-a-derivative-certification-request"
+    ]
+   ],
+   "links": [
+    [
+     "For the remaining Derivatives being submitted, the Vendor must complete the Bulk Derivative Template",
+     "https://fidoalliance.org/wp-content/uploads/BulkDerivativeTemplate_20171108.xlsx"
+    ],
+    [
+     "Derivative Test Plan",
+     "https://fidoalliance.org/wp-content/uploads/2019/04/Derivative-Test-Plan-20190415-3.pdf"
+    ],
+    [
+     "FIDO Vendor Self-Assertion Checklist",
+     "https://fidoalliance.org/wp-content/uploads/FIDO-Certification-Checklist.pdf"
+    ]
+   ],
+   "page": "pages/cert/derivative-certification.md"
+  },
+  {
+   "id": "accredited-security-laboratories",
+   "source": "cert",
+   "title": "FIDO Accredited Security Laboratories",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/accredited-security-laboratories/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/accredited-security-laboratories/",
+   "kind": "html",
+   "sha256": "5b9a1b8427e4352d4a0e5c45292b0fa3ed490d88732f35531cbcd1315e0d07ef",
+   "headings": [
+    [
+     1,
+     "Laboratory Accreditation Process – Security",
+     "laboratory-accreditation-process-security"
+    ],
+    [
+     2,
+     "Laboratory Accreditation Process",
+     "laboratory-accreditation-process"
+    ],
+    [
+     3,
+     "Third-Party Accreditation Requirements",
+     "third-party-accreditation-requirements"
+    ],
+    [
+     3,
+     "FIDO Laboratory Accreditation Fees",
+     "fido-laboratory-accreditation-fees"
+    ],
+    [
+     3,
+     "Accredited Laboratory Dashboard",
+     "accredited-laboratory-dashboard"
+    ]
+   ],
+   "links": [
+    [
+     "process and requirements for laboratories is defined in the Security Laboratory Accreditation Policy",
+     "https://fidoalliance.org/wp-content/uploads/SecurityLaboratoryAccreditationPolicy_v1.1_20170526.pdf"
+    ],
+    [
+     "Complete the FIDO Accreditation Application Form",
+     "https://fidoalliance.org/wp-content/uploads/SecurityAccreditationApplicationv1.2_FInal.pdf"
+    ]
+   ],
+   "page": "pages/cert/accredited-security-laboratories.md"
+  },
+  {
+   "id": "accreditation-process-fees-biometrics",
+   "source": "cert",
+   "title": "Laboratory Accreditation Process - Biometrics",
+   "url": "https://fidoalliance.org/accreditation-process-fees-biometrics/",
+   "raw_url": "https://fidoalliance.org/accreditation-process-fees-biometrics/",
+   "kind": "html",
+   "sha256": "abe8e406ebc96afb6789ef21875926f4429c8f53b1079d53ad93eaff52badbba",
+   "aliases": [
+    "https://fidoalliance.org/certification/biometric-component-certification/fido-accredited-biometric-laboratories/"
+   ],
+   "headings": [
+    [
+     1,
+     "Laboratory Accreditation Process – Biometrics",
+     "laboratory-accreditation-process-biometrics"
+    ],
+    [
+     2,
+     "Laboratory Accreditation Process",
+     "laboratory-accreditation-process"
+    ],
+    [
+     3,
+     "Biometric Laboratory Accreditation Requirements",
+     "biometric-laboratory-accreditation-requirements"
+    ],
+    [
+     4,
+     "General requirements",
+     "general-requirements"
+    ],
+    [
+     4,
+     "Requirements on technical competence",
+     "requirements-on-technical-competence"
+    ],
+    [
+     4,
+     "Common Criteria Protection Profiles:",
+     "common-criteria-protection-profiles"
+    ],
+    [
+     3,
+     "Laboratory Accreditation Fees",
+     "laboratory-accreditation-fees"
+    ],
+    [
+     3,
+     "Implementer Dashboard",
+     "implementer-dashboard"
+    ]
+   ],
+   "links": [
+    [
+     "Then, the candidate laboratory may complete the FIDO Accreditation Application Form",
+     "https://fidoalliance.org/wp-content/uploads/BiometricAccreditationApplication_20180525.pdf"
+    ],
+    [
+     "ation against at least one of the following Protection Profiles, OR provide evidence of using [CAFVM",
+     "https://www.commoncriteriaportal.org/files/supdocs/CCDB-2008-09-002.pdf"
+    ],
+    [
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0043b.pdf",
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0043b.pdf"
+    ],
+    [
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0062b_pdf.pdf",
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0062b_pdf.pdf"
+    ]
+   ],
+   "page": "pages/cert/accreditation-process-fees-biometrics.md"
+  },
+  {
+   "id": "secretariat",
+   "source": "cert",
+   "title": "Certification Program Secretariats",
+   "url": "https://fidoalliance.org/certification/secretariat/",
+   "raw_url": "https://fidoalliance.org/certification/secretariat/",
+   "kind": "html",
+   "sha256": "59159ac45ae63671fdd8fef3a770239493d46ff29cad3a236eeafbfe97803762",
+   "headings": [
+    [
+     1,
+     "Certification Program Secretariat",
+     "certification-program-secretariat"
+    ],
+    [
+     3,
+     "Certification Secretariat",
+     "certification-secretariat"
+    ],
+    [
+     3,
+     "Security Secretariat",
+     "security-secretariat"
+    ],
+    [
+     3,
+     "Biometric Secretariat",
+     "biometric-secretariat"
+    ],
+    [
+     3,
+     "Identity Verification Secretariat",
+     "identity-verification-secretariat"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/secretariat.md"
+  },
+  {
+   "id": "fido-user-authentication-certification-programs",
+   "source": "cert",
+   "title": "FIDO User Authentication Certification Programs",
+   "url": "https://fidoalliance.org/fido-user-authentication-certification-programs/",
+   "raw_url": "https://fidoalliance.org/fido-user-authentication-certification-programs/",
+   "kind": "html",
+   "sha256": "d6779d396045a4a25cae0ce28f30cd740da67c4de1e9d3ffe9a9216a7c047f79",
+   "headings": [
+    [
+     1,
+     "User Authentication Certification Programs",
+     "user-authentication-certification-programs"
+    ],
+    [
+     2,
+     "Certifiable Authentication Products",
+     "certifiable-authentication-products"
+    ],
+    [
+     3,
+     "Authenticators",
+     "authenticators"
+    ],
+    [
+     2,
+     "Why FIDO User Authentication Certification Matters",
+     "why-fido-user-authentication-certification-matters"
+    ],
+    [
+     3,
+     "For vendors:",
+     "for-vendors"
+    ],
+    [
+     3,
+     "For businesses implementing passkeys:",
+     "for-businesses-implementing-passkeys"
+    ],
+    [
+     2,
+     "Get Started with FIDO Certification Programs for User Authentication",
+     "get-started-with-fido-certification-programs-for-user-authentication"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fido-user-authentication-certification-programs.md"
+  },
+  {
+   "id": "functional-certification",
+   "source": "cert",
+   "title": "FIDO Functional Certification Program",
+   "url": "https://fidoalliance.org/certification/functional-certification/",
+   "raw_url": "https://fidoalliance.org/certification/functional-certification/",
+   "kind": "html",
+   "sha256": "be41af322509c7f4bff267bff3784c66dea0eb20ff44ae308f01e87027d9d7a6",
+   "headings": [
+    [
+     1,
+     "Functional Certification: Authenticators/Clients",
+     "functional-certification-authenticatorsclients"
+    ],
+    [
+     3,
+     "Steps to FIDO Certification",
+     "steps-to-fido-certification"
+    ]
+   ],
+   "links": [
+    [
+     "FIDO Certification Non-disclosure Agreement (NDA)",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/functional-certification.md"
+  },
+  {
+   "id": "functional-certification-process-servers",
+   "source": "cert",
+   "title": "Functional Certification: Servers",
+   "url": "https://fidoalliance.org/certification/functional-certification/functional-certification-process-servers/",
+   "raw_url": "https://fidoalliance.org/certification/functional-certification/functional-certification-process-servers/",
+   "kind": "html",
+   "sha256": "9a5355f02542b2da598a7f3734bf746f623619e76ccf40240728cf0f271cafe8",
+   "aliases": [
+    "https://fidoalliance.org/certification/functional-certification/functional-certification-servers/"
+   ],
+   "headings": [
+    [
+     1,
+     "Functional Certification: Servers",
+     "functional-certification-servers"
+    ],
+    [
+     3,
+     "Steps to FIDO Certification",
+     "steps-to-fido-certification"
+    ],
+    [
+     2,
+     "Functional Certification Process: Servers",
+     "functional-certification-process-servers"
+    ],
+    [
+     2,
+     "Vendor ID and Metadata Registration",
+     "vendor-id-and-metadata-registration"
+    ]
+   ],
+   "links": [
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fidoserver/fido-server-v2.3-rd-20251023.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fidoserver/fido-server-v2.3-rd-20260226.pdf"
+    ]
+   ],
+   "page": "pages/cert/functional-certification-process-servers.md"
+  },
+  {
+   "id": "authenticator-certification-levels",
+   "source": "cert",
+   "title": "FIDO Authenticator Certification Levels",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/",
+   "kind": "html",
+   "sha256": "21b0159db2c5bbaad4a0899500f0995f32413630dba54d740c409aa4bb0c95ea",
+   "headings": [
+    [
+     1,
+     "Authenticator Security Levels",
+     "authenticator-security-levels"
+    ],
+    [
+     2,
+     "Policy and Requirements Documents",
+     "policy-and-requirements-documents"
+    ],
+    [
+     2,
+     "Authenticator Certification Process",
+     "authenticator-certification-process"
+    ],
+    [
+     2,
+     "High-Level Process Steps",
+     "high-level-process-steps"
+    ],
+    [
+     4,
+     "Preparation",
+     "preparation"
+    ],
+    [
+     4,
+     "Functional Certification Requirements",
+     "functional-certification-requirements"
+    ],
+    [
+     4,
+     "Authenticator Certification Application",
+     "authenticator-certification-application"
+    ],
+    [
+     4,
+     "Security Evaluation",
+     "security-evaluation"
+    ],
+    [
+     4,
+     "Report Review",
+     "report-review"
+    ],
+    [
+     4,
+     "Certification Issuance",
+     "certification-issuance"
+    ],
+    [
+     4,
+     "Trademark Usage (Optional)",
+     "trademark-usage-optional"
+    ],
+    [
+     4,
+     "Metadata Submission to MDS (Optional)",
+     "metadata-submission-to-mds-optional"
+    ],
+    [
+     2,
+     "Implementer Dashboard",
+     "implementer-dashboard"
+    ]
+   ],
+   "links": [
+    [
+     "erns the Authenticator Certification Levels as part of the FIDO Certification Program. Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2020/12/FIDO-Authenticator_Certification_Program_policy_v1.3_FINAL_September2020.pdf"
+    ],
+    [
+     "f the FIDO Certification Program and more generally all FIDO technical specifications. Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2021/02/FIDO-Privacy-Principles.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-security-requirements-v1.7-rd-20260506.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-security-requirements-v1.6-fd-20250312.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-security-requirements-v1.5.1-fd-20251016.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-security-requirements-v1.5-fd-20211102.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-allowed-cryptography-list-v1.7-rd-20260506.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-allowed-cryptography-list-v1.6-fd-20250312.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-allowed-restricted-operating-environments-list-v1.7-rd-20260506.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-allowed-restricted-operating-environments-list-v1.6-fd-20250312.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-allowed-restricted-operating-environments-list-v1.5.1-fd-20251016.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-metadata-requirements-v1.6-fd-20250312.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements/fido-authenticator-metadata-requirements-v1.5.1-fd-20251016.pdf"
+    ],
+    [
+     "ticator Vendors (Implementers) completing Authenticator Certification at L1 or L2. Download: Level 1",
+     "https://fidoalliance.org/wp-content/uploads/2025/10/FIDO_Authenticator_Certification-L1_VQ_20250827_RELEASE.xlsx"
+    ],
+    [
+     "Level 1+",
+     "https://fidoalliance.org/wp-content/uploads/2025/10/FIDO_Authenticator_Certification-L1-_VQ_20250827_RELEASE.xlsx"
+    ],
+    [
+     "Level 2",
+     "https://fidoalliance.org/wp-content/uploads/2025/10/FIDO_Authenticator_Certification-L2_VQ_20250827_RELEASE.xlsx"
+    ],
+    [
+     "Sample Vendor Questionnaire",
+     "https://fidoalliance.org/wp-content/uploads/2019/01/Authenticator_Sample_VQ_Answers.pdf"
+    ],
+    [
+     "icator Certification at L3 or L3+, depending on the selected Companion Program. Download: Level 3/3+",
+     "https://fidoalliance.org/wp-content/uploads/2025/10/FIDO_Authenticator_Certification-L3L3_VQ_20250827_RELEASE.xlsx"
+    ],
+    [
+     "enters) and submitted to the FIDO Security Secretariat. Download: FIDO Impact Analysis Report (FIAR)",
+     "https://fidoalliance.org/wp-content/uploads/2019/03/FIDO_IAR_v1.0_RELEASE.docx"
+    ]
+   ],
+   "page": "pages/cert/authenticator-certification-levels.md"
+  },
+  {
+   "id": "authenticator-level-1",
+   "source": "cert",
+   "title": "Authenticator Level 1",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-1/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-1/",
+   "kind": "html",
+   "sha256": "a25c1eda25db85716e3678498e17ed09d346b2a31832c369d3f57f640f5571ef",
+   "headings": [
+    [
+     1,
+     "Authenticator Level 1",
+     "authenticator-level-1"
+    ],
+    [
+     2,
+     "Next Steps",
+     "next-steps"
+    ],
+    [
+     3,
+     "Client or Server Implementation",
+     "client-or-server-implementation"
+    ],
+    [
+     3,
+     "New Authenticator Implementation",
+     "new-authenticator-implementation"
+    ],
+    [
+     3,
+     "Functionally Certified Authenticator Implementation",
+     "functionally-certified-authenticator-implementation"
+    ],
+    [
+     2,
+     "L1 Certification Fees",
+     "l1-certification-fees"
+    ],
+    [
+     3,
+     "Implementer Dashboard",
+     "implementer-dashboard"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/authenticator-level-1.md"
+  },
+  {
+   "id": "authenticator-level-1-2",
+   "source": "cert",
+   "title": "Authenticator Level 1+",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-1-2/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-1-2/",
+   "kind": "html",
+   "sha256": "c4ca4bb730bf00c6bb7dc545696b65879180ac0fb858bc9f5e9c4fb238d55cc7",
+   "headings": [
+    [
+     1,
+     "Authenticator Level 1+",
+     "authenticator-level-1"
+    ],
+    [
+     2,
+     "Next Steps",
+     "next-steps"
+    ],
+    [
+     3,
+     "Functionally Certified Authenticator Implementation",
+     "functionally-certified-authenticator-implementation"
+    ],
+    [
+     2,
+     "L1+ Certification Fees",
+     "l1-certification-fees"
+    ],
+    [
+     3,
+     "L1+ Certification Fees",
+     "l1-certification-fees-1"
+    ],
+    [
+     3,
+     "Laboratory Security Evaluation Fees",
+     "laboratory-security-evaluation-fees"
+    ],
+    [
+     3,
+     "Implementer Dashboard",
+     "implementer-dashboard"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/authenticator-level-1-2.md"
+  },
+  {
+   "id": "authenticator-level-2",
+   "source": "cert",
+   "title": "Authenticator Level 2",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-2/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-2/",
+   "kind": "html",
+   "sha256": "61b090cd34ea848117a8a41052940f31b8b291185572b59dbb985473569583ec",
+   "headings": [
+    [
+     1,
+     "Authenticator Level 2",
+     "authenticator-level-2"
+    ],
+    [
+     2,
+     "Next Steps",
+     "next-steps"
+    ],
+    [
+     3,
+     "Client or Server Implementation",
+     "client-or-server-implementation"
+    ],
+    [
+     3,
+     "New Authenticator Implementation",
+     "new-authenticator-implementation"
+    ],
+    [
+     3,
+     "Functionally Certified Authenticator Implementation",
+     "functionally-certified-authenticator-implementation"
+    ],
+    [
+     2,
+     "L2 Certification Fees",
+     "l2-certification-fees"
+    ],
+    [
+     3,
+     "Laboratory Security Evaluation Fees",
+     "laboratory-security-evaluation-fees"
+    ],
+    [
+     3,
+     "Implementer Dashboard",
+     "implementer-dashboard"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/authenticator-level-2.md"
+  },
+  {
+   "id": "authenticator-level-3",
+   "source": "cert",
+   "title": "Authenticator Level 3",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-3/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-3/",
+   "kind": "html",
+   "sha256": "0813ac2f131febfa54cf94d394f89d53e736147a8a7f5afde97c7d583e283213",
+   "headings": [
+    [
+     1,
+     "Authenticator Level 3",
+     "authenticator-level-3"
+    ],
+    [
+     2,
+     "Next Steps",
+     "next-steps"
+    ],
+    [
+     3,
+     "Client or Server Implementation",
+     "client-or-server-implementation"
+    ],
+    [
+     3,
+     "New Authenticator Implementation",
+     "new-authenticator-implementation"
+    ],
+    [
+     3,
+     "Functionally Certified Authenticator Implementation",
+     "functionally-certified-authenticator-implementation"
+    ],
+    [
+     3,
+     "Biometric Component Certification and Authenticator Certification Relationship",
+     "biometric-component-certification-and-authenticator-certification-relationship"
+    ],
+    [
+     2,
+     "L3 Certification Fees",
+     "l3-certification-fees"
+    ],
+    [
+     3,
+     "Laboratory Security Evaluation Fees",
+     "laboratory-security-evaluation-fees"
+    ],
+    [
+     3,
+     "Implementer Dashboard",
+     "implementer-dashboard"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/authenticator-level-3.md"
+  },
+  {
+   "id": "authenticator-level-3-plus",
+   "source": "cert",
+   "title": "Authenticator Level 3+",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-3-plus/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/authenticator-level-3-plus/",
+   "kind": "html",
+   "sha256": "efdbf8d75f85a6f1dcdf4c5a9284421cd4fd92d97de2ce59f46adffab1eb02fc",
+   "headings": [
+    [
+     1,
+     "Authenticator Level 3+",
+     "authenticator-level-3"
+    ],
+    [
+     2,
+     "Next Steps",
+     "next-steps"
+    ],
+    [
+     3,
+     "Client or Server Implementation",
+     "client-or-server-implementation"
+    ],
+    [
+     3,
+     "New Authenticator Implementation",
+     "new-authenticator-implementation"
+    ],
+    [
+     3,
+     "Functionally Certified Authenticator Implementation",
+     "functionally-certified-authenticator-implementation"
+    ],
+    [
+     3,
+     "Biometric Certification and Authenticator Certification Relationship",
+     "biometric-certification-and-authenticator-certification-relationship"
+    ],
+    [
+     2,
+     "Certification Fees",
+     "certification-fees"
+    ],
+    [
+     3,
+     "Laboratory Security Evaluation Fees",
+     "laboratory-security-evaluation-fees"
+    ],
+    [
+     3,
+     "Implementer Dashboard",
+     "implementer-dashboard"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/authenticator-level-3-plus.md"
+  },
+  {
+   "id": "fido-authenticator-certification-companion-program",
+   "source": "cert",
+   "title": "Companion Programs",
+   "url": "https://fidoalliance.org/certification/authenticator-certification-levels/fido-authenticator-certification-companion-program/",
+   "raw_url": "https://fidoalliance.org/certification/authenticator-certification-levels/fido-authenticator-certification-companion-program/",
+   "kind": "html",
+   "sha256": "7c50d10134c887d74d7e461ff5aa929dc5c043ff24a507ab8cd7be7f70744d41",
+   "headings": [
+    [
+     1,
+     "Companion Programs",
+     "companion-programs"
+    ],
+    [
+     3,
+     "Current Approved FIDO Authenticator Certification Companion Programs:",
+     "current-approved-fido-authenticator-certification-companion-programs"
+    ],
+    [
+     3,
+     "Certification Companion Programs for Future Development:",
+     "certification-companion-programs-for-future-development"
+    ]
+   ],
+   "links": [
+    [
+     " factors, claiming an AVA_VAN.3 (or higher) vulnerability assessment. This includes: - IC PP (PP0084",
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0084b_pdf.pdf"
+    ],
+    [
+     ") - Java Card PP (PP0099",
+     "https://www.commoncriteriaportal.org/files/ppfiles/ANSSI-CC-profil_PP-2010-03en.pdf"
+    ],
+    [
+     ") - U2F PP (PP0096",
+     "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Reporte/ReportePP/pp0096b_pdf.pdf?__blob=publicationFile&v=2"
+    ]
+   ],
+   "page": "pages/cert/fido-authenticator-certification-companion-program.md"
+  },
+  {
+   "id": "conformance",
+   "source": "cert",
+   "title": "Conformance Self‐Validation Testing",
+   "url": "https://fidoalliance.org/certification/functional-certification/conformance/",
+   "raw_url": "https://fidoalliance.org/certification/functional-certification/conformance/",
+   "kind": "html",
+   "sha256": "d3145b720b76bf3432dd0358b86616ac974772ab27f9fcb0479ff75f82c7becd",
+   "headings": [
+    [
+     1,
+     "Conformance Self‐Validation Testing",
+     "conformance-selfvalidation-testing"
+    ],
+    [
+     2,
+     "Vendor ID and Metadata Registration",
+     "vendor-id-and-metadata-registration"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/conformance.md"
+  },
+  {
+   "id": "interoperability-testing",
+   "source": "cert",
+   "title": "Interoperability Testing",
+   "url": "https://fidoalliance.org/certification/interoperability-testing/",
+   "raw_url": "https://fidoalliance.org/certification/interoperability-testing/",
+   "kind": "html",
+   "sha256": "84a84a43844275fafd7bd210ed691001ffdc3f575bba9e3e9e661b42ce0b04dc",
+   "headings": [
+    [
+     1,
+     "Interoperability Testing",
+     "interoperability-testing"
+    ],
+    [
+     2,
+     "Interoperability Testing Events",
+     "interoperability-testing-events"
+    ],
+    [
+     2,
+     "Interoperability Events (FIDO2 and FIDO UAF)",
+     "interoperability-events-fido2-and-fido-uaf"
+    ],
+    [
+     2,
+     "On Demand Testing",
+     "on-demand-testing"
+    ],
+    [
+     2,
+     "Testing Procedures",
+     "testing-procedures"
+    ],
+    [
+     3,
+     "UAF Interoperability Testing Procedures",
+     "uaf-interoperability-testing-procedures"
+    ],
+    [
+     3,
+     "U2F Interoperability Testing Procedures",
+     "u2f-interoperability-testing-procedures"
+    ],
+    [
+     3,
+     "FIDO2 Interoperability Testing Procedures",
+     "fido2-interoperability-testing-procedures"
+    ],
+    [
+     3,
+     "Level 1 Authenticator Certification Testing Procedures",
+     "level-1-authenticator-certification-testing-procedures"
+    ]
+   ],
+   "links": [
+    [
+     " protect test participants’ confidential information. The non-disclosure agreement is available here",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/interoperability-testing.md"
+  },
+  {
+   "id": "certification-submission",
+   "source": "cert",
+   "title": "User Authentication Certification Registration",
+   "url": "https://fidoalliance.org/certification/functional-certification/certification-submission/",
+   "raw_url": "https://fidoalliance.org/certification/functional-certification/certification-submission/",
+   "kind": "html",
+   "sha256": "2f2e60308d551a5ad90e6b8b0f16d9e3bd6331322b54dfe3031a17159f2e57e5",
+   "headings": [
+    [
+     1,
+     "User Authentication Certification Registration",
+     "user-authentication-certification-registration"
+    ],
+    [
+     2,
+     "Relying Party Logo Usage",
+     "relying-party-logo-usage"
+    ]
+   ],
+   "links": [
+    [
+     "FIDO Vendor Self-Assertion Checklist",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/FIDO-User-Authentication_Vendor-Self-Assertion_20230301_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/certification-submission.md"
+  },
+  {
+   "id": "certification-request-agreement",
+   "source": "cert",
+   "title": "FIDO Certification Request Agreement",
+   "url": "https://fidoalliance.org/certification/secretariat/certification-request-agreement/",
+   "raw_url": "https://fidoalliance.org/certification/secretariat/certification-request-agreement/",
+   "kind": "html",
+   "sha256": "ebe939bd1d20478249dcc6d6d4b0d667283731c4fa6ea320ae90b56bd4ccbd98",
+   "headings": [
+    [
+     1,
+     "FIDO Certification Request Agreement",
+     "fido-certification-request-agreement"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/certification-request-agreement.md"
+  },
+  {
+   "id": "fido-certification-fees",
+   "source": "cert",
+   "title": "FIDO Certification Fees",
+   "url": "https://fidoalliance.org/fido-certification-fees/",
+   "raw_url": "https://fidoalliance.org/fido-certification-fees/",
+   "kind": "html",
+   "sha256": "21159256ce7b2749e1dde568ffb547d6e3b0d54b3aa6490c13410133e3e42788",
+   "aliases": [
+    "https://fidoalliance.org/certification/user-authentication-certification-registration-fees/"
+   ],
+   "headings": [
+    [
+     1,
+     "FIDO Certification Fees",
+     "fido-certification-fees"
+    ],
+    [
+     2,
+     "User Authentication Certification Fees",
+     "user-authentication-certification-fees"
+    ],
+    [
+     2,
+     "DocAuth Certification Fees",
+     "docauth-certification-fees"
+    ],
+    [
+     2,
+     "Biometric Certification Fees",
+     "biometric-certification-fees"
+    ],
+    [
+     2,
+     "FDO Certification Fees",
+     "fdo-certification-fees"
+    ],
+    [
+     2,
+     "Face Verification Certification Fees",
+     "face-verification-certification-fees"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fido-certification-fees.md"
+  },
+  {
+   "id": "fido-device-onboard",
+   "source": "cert",
+   "title": "Device Onboard (FDO) Certification Program",
+   "url": "https://fidoalliance.org/certification/fido-device-onboard/",
+   "raw_url": "https://fidoalliance.org/certification/fido-device-onboard/",
+   "kind": "html",
+   "sha256": "846e3e5cceb5407386b4cda01ca934fdd0b218223fc4487bcb80fec6dc9fbb73",
+   "headings": [
+    [
+     1,
+     "FIDO Device Onboard Certification",
+     "fido-device-onboard-certification"
+    ],
+    [
+     2,
+     "FDO Certification Program",
+     "fdo-certification-program"
+    ],
+    [
+     2,
+     "Certifiable Implementations of FDO include:",
+     "certifiable-implementations-of-fdo-include"
+    ],
+    [
+     2,
+     "Supported Specification Versions",
+     "supported-specification-versions"
+    ],
+    [
+     2,
+     "Certification Policies and Requirements",
+     "certification-policies-and-requirements"
+    ],
+    [
+     2,
+     "Ready to begin the certification process? Go to the FDO Certification Process <https://fidoalliance.org/fdo-certification-process-overview/>",
+     "ready-to-begin-the-certification-process-go-to-the-fdo-certification-process-httpsfidoallianceorgfdo-certification-process-overview"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fido-device-onboard.md"
+  },
+  {
+   "id": "resource-documentation-fdo",
+   "source": "cert",
+   "title": "Resource Documentation FDO",
+   "url": "https://fidoalliance.org/device-onboarding-overview/device-onboarding-certification/resource-documentation-fdo/",
+   "raw_url": "https://fidoalliance.org/device-onboarding-overview/device-onboarding-certification/resource-documentation-fdo/",
+   "kind": "html",
+   "sha256": "02acbf35bb12decc749c9bfbc6267f340749703c070302197bfac38d0b6be57a",
+   "headings": [
+    [
+     1,
+     "Resource Documentation FDO",
+     "resource-documentation-fdo"
+    ],
+    [
+     3,
+     "Requirements",
+     "requirements"
+    ],
+    [
+     3,
+     "Policies",
+     "policies"
+    ],
+    [
+     3,
+     "Administrative",
+     "administrative"
+    ]
+   ],
+   "links": [
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fdo-security-requirements/FDO-security-requirements-v1.0-fd-20220913.pdf"
+    ],
+    [
+     "FDO Security and Privacy Vendor Questionnaire (VQ)",
+     "https://fidoalliance.org/specs/fdo-security-requirements/FDO-Security-Requirements-VQ_v1.0_RELEASE.xlsx"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fdo-security-requirements/fdo-privacy-policy-v1.0-fd-20220913.pdf"
+    ],
+    [
+     "FIDO Certification Non-Disclosure Agreement (NDA)",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/resource-documentation-fdo.md"
+  },
+  {
+   "id": "fdo-functional-certification",
+   "source": "cert",
+   "title": "FDO Functional Certification",
+   "url": "https://fidoalliance.org/fdo-functional-certification/",
+   "raw_url": "https://fidoalliance.org/fdo-functional-certification/",
+   "kind": "html",
+   "sha256": "fa72bbddf8f1416348331e4ec57d4743d984a5acfeff41836ae548dfaabd613c",
+   "headings": [
+    [
+     1,
+     "FDO Functional Certification",
+     "fdo-functional-certification"
+    ],
+    [
+     2,
+     "FIDO Device Onboard Functional Certification Process",
+     "fido-device-onboard-functional-certification-process"
+    ],
+    [
+     2,
+     "Conformance Self-Validation Testing",
+     "conformance-self-validation-testing"
+    ],
+    [
+     2,
+     "Interoperability Testing",
+     "interoperability-testing"
+    ],
+    [
+     3,
+     "FDO Interoperability Events",
+     "fdo-interoperability-events"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fdo-functional-certification.md"
+  },
+  {
+   "id": "fdo-certification-process-overview",
+   "source": "cert",
+   "title": "FDO Certification Process Overview",
+   "url": "https://fidoalliance.org/fdo-certification-process-overview/",
+   "raw_url": "https://fidoalliance.org/fdo-certification-process-overview/",
+   "kind": "html",
+   "sha256": "964dd261e57ca7ebd6fa793f63c518cd9832fe365d9d149e539d733df821bcd0",
+   "headings": [
+    [
+     1,
+     "FDO Certification Process",
+     "fdo-certification-process"
+    ],
+    [
+     2,
+     "FIDO Device Onboard Certification Process Steps and Requirements",
+     "fido-device-onboard-certification-process-steps-and-requirements"
+    ],
+    [
+     3,
+     "FDO Implementation Class",
+     "fdo-implementation-class"
+    ],
+    [
+     2,
+     "Step 1: Application",
+     "step-1-application"
+    ],
+    [
+     2,
+     "Step 2: Conformance Testing",
+     "step-2-conformance-testing"
+    ],
+    [
+     2,
+     "Step 3: Interoperability Testing",
+     "step-3-interoperability-testing"
+    ],
+    [
+     2,
+     "Step 4: Security Evaluation",
+     "step-4-security-evaluation"
+    ],
+    [
+     2,
+     "Step 5: Certification Request",
+     "step-5-certification-request"
+    ],
+    [
+     3,
+     "Rendezvous Servers",
+     "rendezvous-servers"
+    ],
+    [
+     3,
+     "Device Onboarding Services and FDO-Enabled Devices",
+     "device-onboarding-services-and-fdo-enabled-devices"
+    ],
+    [
+     2,
+     "Step 6: Certificate Issuance",
+     "step-6-certificate-issuance"
+    ],
+    [
+     2,
+     "Step 7: Certification Maintenance",
+     "step-7-certification-maintenance"
+    ],
+    [
+     3,
+     "Rendezvous Servers",
+     "rendezvous-servers-1"
+    ],
+    [
+     3,
+     "Device Onboarding Services and FDO-Enabled Devices",
+     "device-onboarding-services-and-fdo-enabled-devices-1"
+    ],
+    [
+     4,
+     "Step #1: Certification Maintenance Evaluation",
+     "step-1-certification-maintenance-evaluation"
+    ],
+    [
+     4,
+     "Step #2: Certification Maintenance Request",
+     "step-2-certification-maintenance-request"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/fdo-certification-process-overview.md"
+  },
+  {
+   "id": "biometric-component-introduction",
+   "source": "cert",
+   "title": "Biometric Certification",
+   "url": "https://fidoalliance.org/certification/biometric-component-introduction/",
+   "raw_url": "https://fidoalliance.org/certification/biometric-component-introduction/",
+   "kind": "html",
+   "sha256": "ea2bcb20d2e30a14923fc2f3c015654c25b84581ab2e6423802e7217357aae8a",
+   "headings": [
+    [
+     1,
+     "Biometric Certification",
+     "biometric-certification"
+    ],
+    [
+     2,
+     "Introduction",
+     "introduction"
+    ],
+    [
+     2,
+     "Discover the Benefits of Biometric Component Certification",
+     "discover-the-benefits-of-biometric-component-certification"
+    ],
+    [
+     3,
+     "Benefits of Certification For Biometric Vendors",
+     "benefits-of-certification-for-biometric-vendors"
+    ],
+    [
+     3,
+     "Benefits of Certification for Service Providers",
+     "benefits-of-certification-for-service-providers"
+    ],
+    [
+     2,
+     "Ready to begin Biometric Certification?",
+     "ready-to-begin-biometric-certification"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/biometric-component-introduction.md"
+  },
+  {
+   "id": "biometric-certification-process-overview",
+   "source": "cert",
+   "title": "Biometric Component Certification Program",
+   "url": "https://fidoalliance.org/certification/biometric-certification-process-overview/",
+   "raw_url": "https://fidoalliance.org/certification/biometric-certification-process-overview/",
+   "kind": "html",
+   "sha256": "ef0cac25af438d7475a72f2c8c007a48cedb047bf9e8379c60ebf70a513775f3",
+   "headings": [
+    [
+     1,
+     "Biometrics Certification Process Overview",
+     "biometrics-certification-process-overview"
+    ],
+    [
+     2,
+     "FIDO Alliance Biometric Certification Process Overview",
+     "fido-alliance-biometric-certification-process-overview"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/biometric-certification-process-overview.md"
+  },
+  {
+   "id": "resource-documentation-biometric",
+   "source": "cert",
+   "title": "Biometric Certification Resource Documentation",
+   "url": "https://fidoalliance.org/certification/resource-documentation-biometric/",
+   "raw_url": "https://fidoalliance.org/certification/resource-documentation-biometric/",
+   "kind": "html",
+   "sha256": "1a1c3a2529b0978f3496e7e725c5b22c624cd06664409f4ed3a66a6051e66131",
+   "headings": [
+    [
+     1,
+     "Biometric Certification Resource Documentation",
+     "biometric-certification-resource-documentation"
+    ]
+   ],
+   "links": [
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/biometric/certificationpolicy/Biometric-Component-Certification-Policy-v1.5-fd-20240522.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/biometric/certificationpolicy/Biometric-Component-Certification-Policy-v1.4-fd-20211206.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/fido-security-requirements-v1.2-2018/fido-authenticator-metadata-requirements-v1.0-wd-20180629.pdf"
+    ],
+    [
+     "Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ],
+    [
+     "Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2021/11/FIDOAllowedIntegrationDocumentTemplate_v1.5.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/biometric/requirements/Biometrics-Requirements-v5.0-rd02-20260901.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/biometric/requirements/Biometrics-Requirements-v4.1-fd-20250106.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/biometric/requirements/Biometrics-Requirements-v3.0-fd-20230111.pdf"
+    ]
+   ],
+   "page": "pages/cert/resource-documentation-biometric.md"
+  },
+  {
+   "id": "get-certified-biometric",
+   "source": "cert",
+   "title": "Get Certified for Biometric Components",
+   "url": "https://fidoalliance.org/certification/get-certified-biometric/",
+   "raw_url": "https://fidoalliance.org/certification/get-certified-biometric/",
+   "kind": "html",
+   "sha256": "83ba948e895eb1a75747bcc136b820d989b24e15dcae56d61b7c4a56a9f7371c",
+   "headings": [
+    [
+     1,
+     "Get Certified for Biometric Components",
+     "get-certified-for-biometric-components"
+    ],
+    [
+     3,
+     "Ready to begin your Biometric Component certification? Here’s how to get started:",
+     "ready-to-begin-your-biometric-component-certification-heres-how-to-get-started"
+    ]
+   ],
+   "links": [
+    [
+     "Review and complete the FIDO vendor non-disclosure agreement",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/get-certified-biometric.md"
+  },
+  {
+   "id": "certification-biometric-component-fido-biometric-certification-faq",
+   "source": "cert",
+   "title": "FIDO Biometric Certification FAQ",
+   "url": "https://fidoalliance.org/certification-biometric-component-fido-biometric-certification-faq/",
+   "raw_url": "https://fidoalliance.org/certification-biometric-component-fido-biometric-certification-faq/",
+   "kind": "html",
+   "sha256": "e29c07782bfe71137cafe95ada91144d860c3e2022d5e4a126ec0abf902a7e5f",
+   "headings": [
+    [
+     1,
+     "FIDO Biometric Certification FAQ",
+     "fido-biometric-certification-faq"
+    ],
+    [
+     2,
+     "What is the value of a FIDO biometric certificate?",
+     "what-is-the-value-of-a-fido-biometric-certificate"
+    ],
+    [
+     2,
+     "What is the difference between the Biometric Component Certification and Identity Verification Face Verification Certification programs?",
+     "what-is-the-difference-between-the-biometric-component-certification-and-identity-verification-face-verification-certification-programs"
+    ],
+    [
+     2,
+     "Why did the FIDO Alliance introduce the Face Verification Certification program?",
+     "why-did-the-fido-alliance-introduce-the-face-verification-certification-program"
+    ],
+    [
+     2,
+     "What is the value for Biometric Vendors?",
+     "what-is-the-value-for-biometric-vendors"
+    ],
+    [
+     2,
+     "What is the value for Relying Parties?",
+     "what-is-the-value-for-relying-parties"
+    ],
+    [
+     2,
+     "What is the value of accredited laboratories?",
+     "what-is-the-value-of-accredited-laboratories"
+    ],
+    [
+     2,
+     "What is the difference between FIDO and other evaluation programs?",
+     "what-is-the-difference-between-fido-and-other-evaluation-programs"
+    ],
+    [
+     2,
+     "Does FIDO Certification conform to ISO standards?",
+     "does-fido-certification-conform-to-iso-standards"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/certification-biometric-component-fido-biometric-certification-faq.md"
+  },
+  {
+   "id": "identity-verification",
+   "source": "cert",
+   "title": "Identity (IDV) Verification Certification",
+   "url": "https://fidoalliance.org/certification/identity-verification/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/",
+   "kind": "html",
+   "sha256": "fcfaff04db2b1f10e1b1e022382dc3fcd7a6ce7b7335d8361da81340fb1be7aa",
+   "headings": [
+    [
+     1,
+     "Identity Verification Certifications",
+     "identity-verification-certifications"
+    ],
+    [
+     2,
+     "The Need for Secure Identity Verification",
+     "the-need-for-secure-identity-verification"
+    ],
+    [
+     2,
+     "Build Resilience with Identity Verification Certifications",
+     "build-resilience-with-identity-verification-certifications"
+    ],
+    [
+     3,
+     "Meet Outcomes with Identification Verification Certifications",
+     "meet-outcomes-with-identification-verification-certifications"
+    ],
+    [
+     2,
+     "Benefits of FIDO Certifications",
+     "benefits-of-fido-certifications"
+    ],
+    [
+     2,
+     "Ready to start Identity Verification Certification?",
+     "ready-to-start-identity-verification-certification"
+    ],
+    [
+     3,
+     "Get Certified in Document Authenticity (DocAuth) <https://fidoalliance.org/certification/identity-verification/document-authenticity/>",
+     "get-certified-in-document-authenticity-docauth-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticity"
+    ],
+    [
+     3,
+     "Get Certified in Face Verification <https://fidoalliance.org/certification/identity-verification/face-verification/>",
+     "get-certified-in-face-verification-httpsfidoallianceorgcertificationidentity-verificationface-verification"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/identity-verification.md"
+  },
+  {
+   "id": "document-authenticity",
+   "source": "cert",
+   "title": "Document Authenticity Certification (DocAuth)",
+   "url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/",
+   "kind": "html",
+   "sha256": "873adc344df51026366675abfb82e11e6998f67cbb4c36f4ddad2ea1db2a9f67",
+   "headings": [
+    [
+     1,
+     "Document Authenticity (DocAuth) Certification Program",
+     "document-authenticity-docauth-certification-program"
+    ],
+    [
+     2,
+     "Introduction",
+     "introduction"
+    ],
+    [
+     3,
+     "Verify Users with FIDO Document Authenticity (DocAuth) Certification",
+     "verify-users-with-fido-document-authenticity-docauth-certification"
+    ],
+    [
+     3,
+     "Test for Threats in Document Authentication",
+     "test-for-threats-in-document-authentication"
+    ],
+    [
+     3,
+     "Why Providers Choose Document Authentication Certification",
+     "why-providers-choose-document-authentication-certification"
+    ],
+    [
+     2,
+     "Benefits of FIDO Document Authentication Certification",
+     "benefits-of-fido-document-authentication-certification"
+    ],
+    [
+     2,
+     "Ready to start DocAuth Certification?",
+     "ready-to-start-docauth-certification"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/document-authenticity.md"
+  },
+  {
+   "id": "document-authenticity-process-overview",
+   "source": "cert",
+   "title": "Process Overview for DocAuth Certification",
+   "url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/process-overview/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/process-overview/",
+   "kind": "html",
+   "sha256": "670ef8ed1d2b5a5009db556ecbb909f5c62e5de4acaa7a052016c33d8043197f",
+   "headings": [
+    [
+     1,
+     "DocAuth Certification Process Overview",
+     "docauth-certification-process-overview"
+    ],
+    [
+     3,
+     "Coming soon: A new journey for the FIDO laboratory pages. Stay tuned.",
+     "coming-soon-a-new-journey-for-the-fido-laboratory-pages-stay-tuned"
+    ],
+    [
+     3,
+     "Document Authenticity (DocAuth) Certification Program",
+     "document-authenticity-docauth-certification-program"
+    ],
+    [
+     3,
+     "This figure provides an overview of the certification process of a mobile document verification solution:",
+     "this-figure-provides-an-overview-of-the-certification-process-of-a-mobile-document-verification-solution"
+    ],
+    [
+     3,
+     "Detailed Certification Process:",
+     "detailed-certification-process"
+    ],
+    [
+     4,
+     "Step 1:",
+     "step-1"
+    ],
+    [
+     4,
+     "Step 2:",
+     "step-2"
+    ],
+    [
+     4,
+     "Step 3:",
+     "step-3"
+    ],
+    [
+     4,
+     "Step 4:",
+     "step-4"
+    ],
+    [
+     4,
+     "Step 5:",
+     "step-5"
+    ],
+    [
+     2,
+     "Ready to begin DocAuth Certification?",
+     "ready-to-begin-docauth-certification"
+    ],
+    [
+     2,
+     "Go to Get Certified <https://fidoalliance.org/certification/identity-verification/document-authenticity/get-certified/>",
+     "go-to-get-certified-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticityget-certified"
+    ]
+   ],
+   "links": [
+    [
+     "Complete and submit application: the vendor completes a NDA",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/document-authenticity-process-overview.md"
+  },
+  {
+   "id": "document-authenticity-resource-documentation",
+   "source": "cert",
+   "title": "DocAuth Certification Resource Documentation",
+   "url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/resource-documentation/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/resource-documentation/",
+   "kind": "html",
+   "sha256": "13508112824fe73411963e75173785946238795db619edf8929a921d0878272d",
+   "headings": [
+    [
+     1,
+     "DocAuth Resource Documentation",
+     "docauth-resource-documentation"
+    ],
+    [
+     3,
+     "FIDO Document Authenticity (DocAuth) Certification Policy",
+     "fido-document-authenticity-docauth-certification-policy"
+    ],
+    [
+     3,
+     "FIDO Document Authenticity (DocAuth) Vendor NDA",
+     "fido-document-authenticity-docauth-vendor-nda"
+    ],
+    [
+     3,
+     "FIDO Document Authenticity (DocAuth) Requirements",
+     "fido-document-authenticity-docauth-requirements"
+    ],
+    [
+     3,
+     "FIDO Document Authenticity (DocAuth) Test Plan Template",
+     "fido-document-authenticity-docauth-test-plan-template"
+    ],
+    [
+     2,
+     "Ready to begin DocAuth Certification?",
+     "ready-to-begin-docauth-certification"
+    ],
+    [
+     2,
+     "Go to Get Certified <https://fidoalliance.org/certification/identity-verification/document-authenticity/get-certified/>",
+     "go-to-get-certified-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticityget-certified"
+    ]
+   ],
+   "links": [
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/certification/docauth/docauth-cert-policy-v1.0-fd-20211021.pdf"
+    ],
+    [
+     "Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/idv/docauth/document-authenticity-verification-requirements-v2.0-rd-20260206.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/idv/docauth/document-authenticity-verification-requirements-v1.2-rd-20250804.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/idv/docauth/document-authenticity-verification-requirements-v1.1-fd-20240709.pdf"
+    ],
+    [
+     "Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2022/10/IDV_DA_TestPlan_TOEDescription_Template_v1.0_20221001.docx.pdf"
+    ]
+   ],
+   "page": "pages/cert/document-authenticity-resource-documentation.md"
+  },
+  {
+   "id": "document-authenticity-get-certified",
+   "source": "cert",
+   "title": "Get Certified for DocAuth",
+   "url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/get-certified/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/document-authenticity/get-certified/",
+   "kind": "html",
+   "sha256": "1554050c0454b64ba12ace02623ca14f9ebf6c55d6470fe6900a04abf7998010",
+   "headings": [
+    [
+     1,
+     "Get Certified for DocAuth",
+     "get-certified-for-docauth"
+    ],
+    [
+     3,
+     "Ready to begin your DocAuth Certification? Get started in 3 easy steps.",
+     "ready-to-begin-your-docauth-certification-get-started-in-3-easy-steps"
+    ]
+   ],
+   "links": [
+    [
+     "Review and complete the FIDO Non-Disclosure Agreement [NDA",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/document-authenticity-get-certified.md"
+  },
+  {
+   "id": "face-verification",
+   "source": "cert",
+   "title": "FIDO Face Verification Certification Program",
+   "url": "https://fidoalliance.org/certification/identity-verification/face-verification/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/face-verification/",
+   "kind": "html",
+   "sha256": "8b98d288b5e01bc8a14d4bf82aaef32fe3d585a6dfde591f723f15f9df60e5c4",
+   "headings": [
+    [
+     1,
+     "Face Verification",
+     "face-verification"
+    ],
+    [
+     2,
+     "Face Verification for Remote Identity Authentication",
+     "face-verification-for-remote-identity-authentication"
+    ],
+    [
+     2,
+     "Verify Users with FIDO Face Verification Certification",
+     "verify-users-with-fido-face-verification-certification"
+    ],
+    [
+     3,
+     "Test for Threats to Face Verification",
+     "test-for-threats-to-face-verification"
+    ],
+    [
+     3,
+     "Why Providers Choose Face Verification Certification",
+     "why-providers-choose-face-verification-certification"
+    ],
+    [
+     2,
+     "Benefits of FIDO Face Verification Certification",
+     "benefits-of-fido-face-verification-certification"
+    ],
+    [
+     2,
+     "Ready to start Face Verification Certification?",
+     "ready-to-start-face-verification-certification"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/face-verification.md"
+  },
+  {
+   "id": "face-verification-process-overview",
+   "source": "cert",
+   "title": "Process Overview for Face Verification Certification",
+   "url": "https://fidoalliance.org/certification/identity-verification/face-verification/process-overview/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/face-verification/process-overview/",
+   "kind": "html",
+   "sha256": "53a8f3bd924fc787cecfcf89693e94e4da599016e95172dbf9bfec22d31ce97f",
+   "headings": [
+    [
+     1,
+     "Face Verification Certification Process Overview",
+     "face-verification-certification-process-overview"
+    ],
+    [
+     3,
+     "Face Verification Certification Program",
+     "face-verification-certification-program"
+    ],
+    [
+     3,
+     "This figure provides an overview of the certification process of a “selfie match” identification verification solution:",
+     "this-figure-provides-an-overview-of-the-certification-process-of-a-selfie-match-identification-verification-solution"
+    ],
+    [
+     3,
+     "Detailed Certification Process",
+     "detailed-certification-process"
+    ],
+    [
+     4,
+     "Step 1:",
+     "step-1"
+    ],
+    [
+     4,
+     "Step 2:",
+     "step-2"
+    ],
+    [
+     4,
+     "Step 3:",
+     "step-3"
+    ],
+    [
+     4,
+     "Step 4:",
+     "step-4"
+    ],
+    [
+     4,
+     "Step 5:",
+     "step-5"
+    ],
+    [
+     2,
+     "Ready to begin Face Verification Certification?",
+     "ready-to-begin-face-verification-certification"
+    ],
+    [
+     2,
+     "Go to Get Certified <https://fidoalliance.org/certification/identity-verification/face-verification/get-certified/>",
+     "go-to-get-certified-httpsfidoallianceorgcertificationidentity-verificationface-verificationget-certified"
+    ]
+   ],
+   "links": [
+    [
+     "Complete and submit application: the vendor completes a [NDA",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/face-verification-process-overview.md"
+  },
+  {
+   "id": "face-verification-get-certified",
+   "source": "cert",
+   "title": "Get Certified for Face Verification",
+   "url": "https://fidoalliance.org/certification/identity-verification/face-verification/get-certified/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/face-verification/get-certified/",
+   "kind": "html",
+   "sha256": "63b8d4d1827615b9a767c0e0bf5da96e1d2daffec1082c3258f4d2f729cc8165",
+   "headings": [
+    [
+     1,
+     "Get Certified for Face Verification",
+     "get-certified-for-face-verification"
+    ],
+    [
+     3,
+     "Ready to begin your Face Verification Certification?",
+     "ready-to-begin-your-face-verification-certification"
+    ],
+    [
+     3,
+     "Get started in 3 easy steps.",
+     "get-started-in-3-easy-steps"
+    ],
+    [
+     4,
+     "Step 1",
+     "step-1"
+    ],
+    [
+     4,
+     "Step 2",
+     "step-2"
+    ],
+    [
+     4,
+     "Step 3",
+     "step-3"
+    ]
+   ],
+   "links": [
+    [
+     "Review and complete the FIDO vendor non-disclosure agreement [NDA",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ]
+   ],
+   "page": "pages/cert/face-verification-get-certified.md"
+  },
+  {
+   "id": "face-verification-resource-documentation",
+   "source": "cert",
+   "title": "Face Verification Resource Documentation Resource Documentation for Face Verification",
+   "url": "https://fidoalliance.org/certification/identity-verification/face-verification/resource-documentation/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/face-verification/resource-documentation/",
+   "kind": "html",
+   "sha256": "dae0221882fe9bcc2c4dc0e410692c70aa39572317b860c2c9cfd847c727f48e",
+   "headings": [
+    [
+     1,
+     "Face Verification Resource Documentation",
+     "face-verification-resource-documentation"
+    ],
+    [
+     3,
+     "FIDO Face Verification Certification Policy",
+     "fido-face-verification-certification-policy"
+    ],
+    [
+     3,
+     "FIDO Face Verification Vendor NDA",
+     "fido-face-verification-vendor-nda"
+    ],
+    [
+     3,
+     "FIDO Face Verification Requirements",
+     "fido-face-verification-requirements"
+    ],
+    [
+     3,
+     "FIDO Face Verification Test Plan Template",
+     "fido-face-verification-test-plan-template"
+    ]
+   ],
+   "links": [
+    [
+     "Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2023/04/2023-03-21-FIDO-Certification-NDA_FINAL.pdf"
+    ],
+    [
+     "PDF",
+     "https://fidoalliance.org/specs/biometric/requirements/Biometrics-Requirements-v4.1-fd-20250106.pdf"
+    ],
+    [
+     "Download: PDF",
+     "https://fidoalliance.org/wp-content/uploads/2024/05/IDV-Face_FIDOBiometricEvaluationReportTemplateFBERT_v1.5.pdf"
+    ]
+   ],
+   "page": "pages/cert/face-verification-resource-documentation.md"
+  },
+  {
+   "id": "face-verification-fido-certified-products",
+   "source": "cert",
+   "title": "FIDO Certified IDV Face Verification Products",
+   "url": "https://fidoalliance.org/certification/identity-verification/face-verification/fido-certified-products/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/face-verification/fido-certified-products/",
+   "kind": "html",
+   "sha256": "6e9de57a44d1289dd17a2246c6db21cbf7581b7209019efe141e1f4463808fe7",
+   "headings": [
+    [
+     1,
+     "FIDO® Certified IDV Face Verification Products",
+     "fido-certified-idv-face-verification-products"
+    ],
+    [
+     3,
+     "Aware, Inc.",
+     "aware-inc"
+    ],
+    [
+     3,
+     "Candour Oy",
+     "candour-oy"
+    ],
+    [
+     3,
+     "Northern Point Technology II Private Limited",
+     "northern-point-technology-ii-private-limited"
+    ],
+    [
+     3,
+     "Veriff",
+     "veriff"
+    ],
+    [
+     3,
+     "Aware, Inc.",
+     "aware-inc-1"
+    ],
+    [
+     3,
+     "iProov",
+     "iproov"
+    ],
+    [
+     3,
+     "Northern Point Technology II Private Limited",
+     "northern-point-technology-ii-private-limited-1"
+    ],
+    [
+     3,
+     "Veriff",
+     "veriff-1"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/face-verification-fido-certified-products.md"
+  },
+  {
+   "id": "vendor-ids",
+   "source": "cert",
+   "title": "Vendor IDs",
+   "url": "https://fidoalliance.org/certification/functional-certification/vendor-ids/",
+   "raw_url": "https://fidoalliance.org/certification/functional-certification/vendor-ids/",
+   "kind": "html",
+   "sha256": "e8dcf8ba17d47d0f21e068d817091c3178d39725bc77791825e226781c5380f7",
+   "headings": [
+    [
+     1,
+     "Vendor IDs",
+     "vendor-ids"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/vendor-ids.md"
+  },
+  {
+   "id": "biometric-component-introduction-accredited-labs",
+   "source": "cert",
+   "title": "FIDO Accredited Biometric Laboratories",
+   "url": "https://fidoalliance.org/certification/biometric-component-introduction/accredited-labs/",
+   "raw_url": "https://fidoalliance.org/certification/biometric-component-introduction/accredited-labs/",
+   "kind": "html",
+   "sha256": "47cb57aadee34b22b95c7b8b36f13765a988d1eef181c3f381bf0a2218af9f1b",
+   "headings": [
+    [
+     1,
+     "FIDO Accredited Biometric Laboratories",
+     "fido-accredited-biometric-laboratories"
+    ],
+    [
+     3,
+     "Accredited Biometric Laboratory List",
+     "accredited-biometric-laboratory-list"
+    ],
+    [
+     3,
+     "Laboratory Accreditation Process",
+     "laboratory-accreditation-process"
+    ],
+    [
+     3,
+     "Biometric Laboratory Accreditation Requirements",
+     "biometric-laboratory-accreditation-requirements"
+    ],
+    [
+     4,
+     "General requirements",
+     "general-requirements"
+    ],
+    [
+     4,
+     "Requirements on technical competence",
+     "requirements-on-technical-competence"
+    ],
+    [
+     4,
+     "Common Criteria Protection Profiles:",
+     "common-criteria-protection-profiles"
+    ],
+    [
+     3,
+     "Laboratory Accreditation Fees",
+     "laboratory-accreditation-fees"
+    ]
+   ],
+   "links": [
+    [
+     "Then, the candidate laboratory may complete the FIDO Accreditation Application Form",
+     "https://fidoalliance.org/wp-content/uploads/BiometricAccreditationApplication_20180525.pdf"
+    ],
+    [
+     "ation against at least one of the following Protection Profiles, OR provide evidence of using [CAFVM",
+     "https://www.commoncriteriaportal.org/files/supdocs/CCDB-2008-09-002.pdf"
+    ],
+    [
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0043b.pdf",
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0043b.pdf"
+    ],
+    [
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0062b_pdf.pdf",
+     "https://www.commoncriteriaportal.org/files/ppfiles/pp0062b_pdf.pdf"
+    ]
+   ],
+   "page": "pages/cert/biometric-component-introduction-accredited-labs.md"
+  },
+  {
+   "id": "face-verification-accredited-labs",
+   "source": "cert",
+   "title": "Face Verification Accredited Labs",
+   "url": "https://fidoalliance.org/certification/identity-verification/face-verification/accredited-labs/",
+   "raw_url": "https://fidoalliance.org/certification/identity-verification/face-verification/accredited-labs/",
+   "kind": "html",
+   "sha256": "450b17ddfedec2d5e36fdc566d8811bb2d85b591e08782a2baa1e2c099550163",
+   "headings": [
+    [
+     1,
+     "Face Verification Accredited Labs",
+     "face-verification-accredited-labs"
+    ],
+    [
+     3,
+     "FIDO Accredited Face Verification Laboratories",
+     "fido-accredited-face-verification-laboratories"
+    ],
+    [
+     4,
+     "<https://www.tuvit.de>TUV Informationstechnik GmbH <https://www.tuvit.de/en/home/> | Germany",
+     "httpswwwtuvitdetuv-informationstechnik-gmbh-httpswwwtuvitdeenhome-germany"
+    ],
+    [
+     3,
+     "FIDO Accredited Certification Programs",
+     "fido-accredited-certification-programs"
+    ],
+    [
+     5,
+     "Face Verification <https://fidoalliance.org/certification/identity-verification/face-verification/> Biometric Component <https://fidoalliance.org/certification/biometric-component-introduction/>",
+     "face-verification-httpsfidoallianceorgcertificationidentity-verificationface-verification-biometric-component-httpsfidoallianceorgcertificationbiometric-component-introduction"
+    ],
+    [
+     4,
+     "TTA (Telecommunications Technology Association) <https://tta.or.kr/eng/index.do> | Seoul, South Korea",
+     "tta-telecommunications-technology-association-httpsttaorkrengindexdo-seoul-south-korea"
+    ],
+    [
+     3,
+     "FIDO Accredited Certification Programs",
+     "fido-accredited-certification-programs-1"
+    ],
+    [
+     5,
+     "Face Verification <https://fidoalliance.org/certification/identity-verification/face-verification/> Document Authenticity (DocAuth) <https://fidoalliance.org/certification/identity-verification/document-authenticity/> Biometric Component <https://fidoalliance.org/certification/biometric-component-introduction/>",
+     "face-verification-httpsfidoallianceorgcertificationidentity-verificationface-verification-document-authenticity-docauth-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticity-biometric-component-httpsfidoallianceorgcertificationbiometric-component-introduction"
+    ],
+    [
+     4,
+     "Fime Taiwan <https://www.fime.com/> | Taiwan",
+     "fime-taiwan-httpswwwfimecom-taiwan"
+    ],
+    [
+     3,
+     "FIDO Accredited Certification Programs",
+     "fido-accredited-certification-programs-2"
+    ],
+    [
+     5,
+     "Document Authenticity (DocAuth) <https://fidoalliance.org/certification/identity-verification/document-authenticity/> Face Verification <https://fidoalliance.org/certification/identity-verification/face-verification/> Biometric Component <https://fidoalliance.org/certification/biometric-component-introduction/>",
+     "document-authenticity-docauth-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticity-face-verification-httpsfidoallianceorgcertificationidentity-verificationface-verification-biometric-component-httpsfidoallianceorgcertificationbiometric-component-introduction"
+    ],
+    [
+     4,
+     "Ingenium Biometrics <https://ingeniumbiometrics.com/> | Bristol, UK",
+     "ingenium-biometrics-httpsingeniumbiometricscom-bristol-uk"
+    ],
+    [
+     3,
+     "FIDO Accredited Certification Programs",
+     "fido-accredited-certification-programs-3"
+    ],
+    [
+     5,
+     "Face Verification <https://fidoalliance.org/certification/identity-verification/face-verification/> Document Authenticity (DocAuth) <https://fidoalliance.org/certification/identity-verification/document-authenticity/> Biometric Component <https://fidoalliance.org/certification/biometric-component-introduction/>",
+     "face-verification-httpsfidoallianceorgcertificationidentity-verificationface-verification-document-authenticity-docauth-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticity-biometric-component-httpsfidoallianceorgcertificationbiometric-component-introduction-1"
+    ],
+    [
+     4,
+     "BixeLab Pty Ltd <https://www.bixelab.com/> | Australia",
+     "bixelab-pty-ltd-httpswwwbixelabcom-australia"
+    ],
+    [
+     3,
+     "FIDO Accredited Certification Programs",
+     "fido-accredited-certification-programs-4"
+    ],
+    [
+     5,
+     "Face Verification <https://fidoalliance.org/certification/identity-verification/face-verification/> Document Authenticity (DocAuth) <https://fidoalliance.org/certification/identity-verification/document-authenticity/> Biometric Component <https://fidoalliance.org/certification/biometric-component-introduction/>",
+     "face-verification-httpsfidoallianceorgcertificationidentity-verificationface-verification-document-authenticity-docauth-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticity-biometric-component-httpsfidoallianceorgcertificationbiometric-component-introduction-2"
+    ],
+    [
+     4,
+     "Fime EMEA <https://www.fime.com/> | France",
+     "fime-emea-httpswwwfimecom-france"
+    ],
+    [
+     3,
+     "FIDO Accredited Certification Programs",
+     "fido-accredited-certification-programs-5"
+    ],
+    [
+     5,
+     "Document Authenticity (DocAuth) <https://fidoalliance.org/certification/identity-verification/document-authenticity/> Face Verification <https://fidoalliance.org/certification/identity-verification/face-verification/> Biometric Component <https://fidoalliance.org/certification/biometric-component-introduction/>",
+     "document-authenticity-docauth-httpsfidoallianceorgcertificationidentity-verificationdocument-authenticity-face-verification-httpsfidoallianceorgcertificationidentity-verificationface-verification-biometric-component-httpsfidoallianceorgcertificationbiometric-component-introduction-1"
+    ],
+    [
+     2,
+     "Ready to begin Face Verification Certification?",
+     "ready-to-begin-face-verification-certification"
+    ],
+    [
+     2,
+     "Go to Get Certified <https://fidoalliance.org/certification/identity-verification/face-verification/get-certified/>",
+     "go-to-get-certified-httpsfidoallianceorgcertificationidentity-verificationface-verificationget-certified"
+    ]
+   ],
+   "links": [],
+   "page": "pages/cert/face-verification-accredited-labs.md"
+  },
+  {
+   "id": "ctt-readme",
+   "source": "ctt",
+   "title": "Conformance test tools resources (repository README)",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/README.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/README.md",
+   "kind": "markdown",
+   "sha256": "d4258580c91bbe201c0ae1168360fd94844a07b96362329eef20d8be392ba7a2",
+   "headings": [
+    [
+     1,
+     "THIS IS A PUBLIC REPOSITORY. ALL ISSUES ARE VISIBLE TO GENERAL PUBLIC. FIDO ALLIANCE TAKES NO RESPONSIBILITY FOR THE PRIVACY OF YOUR SUBMISSION. SEE PRIVACY",
+     "this-is-a-public-repository-all-issues-are-visible-to-general-public-fido-alliance-takes-no-responsibility-for-the-privacy-of-your-submission-see-privacy"
+    ],
+    [
+     1,
+     "Overview",
+     "overview"
+    ],
+    [
+     1,
+     "Privacy",
+     "privacy"
+    ],
+    [
+     1,
+     "Contact Us",
+     "contact-us"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-readme.md"
+  },
+  {
+   "id": "ctt-fdo-pre-interop-dashboard-api",
+   "source": "ctt",
+   "title": "Conformance tools docs: FDO/Pre-Interop/Dashboard-API",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FDO/Pre-Interop/Dashboard-API.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FDO/Pre-Interop/Dashboard-API.md",
+   "kind": "markdown",
+   "sha256": "1b281445cb4fa8fec9f99572102a101ca92f764e937f706d58fedf8b54d6a1d4",
+   "headings": [
+    [
+     2,
+     "Authorization and Header",
+     "authorization-and-header"
+    ],
+    [
+     2,
+     "Commands",
+     "commands"
+    ],
+    [
+     3,
+     "SubmitEvent, Type 10",
+     "submitevent-type-10"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fdo-pre-interop-dashboard-api.md"
+  },
+  {
+   "id": "ctt-fdo-pre-interop",
+   "source": "ctt",
+   "title": "Conformance tools docs: FDO/Pre-Interop — FIDO Alliance Pre-Interop Requirements",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FDO/Pre-Interop/README.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FDO/Pre-Interop/README.md",
+   "kind": "markdown",
+   "sha256": "42db4fbbbc758e8a78dd292259bf40919b6e5802395e9f6c410c43d7bec59b58",
+   "headings": [
+    [
+     1,
+     "FIDO Alliance Pre-Interop Requirements",
+     "fido-alliance-pre-interop-requirements"
+    ],
+    [
+     2,
+     "Dashboard API",
+     "dashboard-api"
+    ],
+    [
+     2,
+     "URLs",
+     "urls"
+    ],
+    [
+     2,
+     "Minimum requirements",
+     "minimum-requirements"
+    ],
+    [
+     2,
+     "Voucher encoding format",
+     "voucher-encoding-format"
+    ],
+    [
+     2,
+     "Conformance Service Info",
+     "conformance-service-info"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fdo-pre-interop.md"
+  },
+  {
+   "id": "ctt-fdo-pre-interop-step-by-step",
+   "source": "ctt",
+   "title": "Conformance tools docs: FDO/Pre-Interop/Step-by-step — Pre-Interop Process Step-By-Step",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FDO/Pre-Interop/Step-by-step.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FDO/Pre-Interop/Step-by-step.md",
+   "kind": "markdown",
+   "sha256": "232f8c5d5bf717b42eed0326551e92efe0ea5533bcdc96516c625b109069018f",
+   "headings": [
+    [
+     1,
+     "Pre-Interop Process Step-By-Step",
+     "pre-interop-process-step-by-step"
+    ],
+    [
+     2,
+     "Terms",
+     "terms"
+    ],
+    [
+     2,
+     "Entities involved",
+     "entities-involved"
+    ],
+    [
+     2,
+     "Goal",
+     "goal"
+    ],
+    [
+     2,
+     "Measure of success",
+     "measure-of-success"
+    ],
+    [
+     3,
+     "Expected Logs",
+     "expected-logs"
+    ],
+    [
+     3,
+     "FIDO Requirements",
+     "fido-requirements"
+    ],
+    [
+     2,
+     "Voucher, SIM and Logger support",
+     "voucher-sim-and-logger-support"
+    ],
+    [
+     2,
+     "Setup",
+     "setup"
+    ],
+    [
+     2,
+     "Operational",
+     "operational"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fdo-pre-interop-step-by-step.md"
+  },
+  {
+   "id": "ctt-fdo",
+   "source": "ctt",
+   "title": "Conformance tools docs: FDO — Awesome FDO Resources",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FDO/README.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FDO/README.md",
+   "kind": "markdown",
+   "sha256": "222f21e5c0349039428d6d10a59a744ea1a9040b4754a85ba7a8b5a64bde6448",
+   "headings": [
+    [
+     1,
+     "Awesome FDO Resources",
+     "awesome-fdo-resources"
+    ],
+    [
+     2,
+     "Protocol Specification",
+     "protocol-specification"
+    ],
+    [
+     2,
+     "Protocol Reference Implementations",
+     "protocol-reference-implementations"
+    ],
+    [
+     2,
+     "Articles",
+     "articles"
+    ],
+    [
+     2,
+     "Other Resources",
+     "other-resources"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fdo.md"
+  },
+  {
+   "id": "ctt-fido2-authenticator-getting-getinfo-snapshot",
+   "source": "ctt",
+   "title": "Conformance tools docs: FIDO2/Authenticator/Getting-GetInfo-Snapshot",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FIDO2/Authenticator/Getting-GetInfo-Snapshot.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FIDO2/Authenticator/Getting-GetInfo-Snapshot.md",
+   "kind": "markdown",
+   "sha256": "9fedc6506ed050b367e284b3bb0f43c11cf0dbc5984252f1e156ba47d038daca",
+   "headings": [],
+   "links": [],
+   "page": "pages/ctt/ctt-fido2-authenticator-getting-getinfo-snapshot.md"
+  },
+  {
+   "id": "ctt-fido2-authenticator",
+   "source": "ctt",
+   "title": "Conformance tools docs: FIDO2/Authenticator — FIDO2 Testing",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FIDO2/Authenticator/README.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FIDO2/Authenticator/README.md",
+   "kind": "markdown",
+   "sha256": "6e57f89fe10a7ddcf89cf3b766f927082356e9973a2bdc5142fb356ba2c386cd",
+   "headings": [
+    [
+     1,
+     "FIDO2 Testing",
+     "fido2-testing"
+    ],
+    [
+     3,
+     "Enterprise attestation (CTAP2.1+)",
+     "enterprise-attestation-ctap21"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fido2-authenticator.md"
+  },
+  {
+   "id": "ctt-fido2-automation",
+   "source": "ctt",
+   "title": "Conformance tools docs: FIDO2/Automation — Test Automation",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FIDO2/Automation.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FIDO2/Automation.md",
+   "kind": "markdown",
+   "sha256": "81c634a54f6dfd3890a3e65cc7e3bf5473926f8fd14ba74a39c2c64f73939665",
+   "headings": [
+    [
+     1,
+     "Test Automation",
+     "test-automation"
+    ],
+    [
+     2,
+     "What does it do?",
+     "what-does-it-do"
+    ],
+    [
+     2,
+     "How to toggle test automation",
+     "how-to-toggle-test-automation"
+    ],
+    [
+     2,
+     "Automation API",
+     "automation-api"
+    ],
+    [
+     2,
+     "Startup arguments",
+     "startup-arguments"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fido2-automation.md"
+  },
+  {
+   "id": "ctt-fido2-server-conformance-test-api",
+   "source": "ctt",
+   "title": "Conformance tools docs: FIDO2/Server/Conformance-Test-API — FIDO2: Conformance testing server API",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FIDO2/Server/Conformance-Test-API.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FIDO2/Server/Conformance-Test-API.md",
+   "kind": "markdown",
+   "sha256": "cdc52787ebc258ea4e05dd48b0f24b2fe617a5f7bfee1de65f5133e4a52aa321",
+   "headings": [
+    [
+     1,
+     "FIDO2: Conformance testing server API",
+     "fido2-conformance-testing-server-api"
+    ],
+    [
+     2,
+     "Contents",
+     "contents"
+    ],
+    [
+     2,
+     "Introduction",
+     "introduction"
+    ],
+    [
+     2,
+     "Registration",
+     "registration"
+    ],
+    [
+     3,
+     "Registration Overview",
+     "registration-overview"
+    ],
+    [
+     3,
+     "Registration Examples",
+     "registration-examples"
+    ],
+    [
+     4,
+     "Registration Example: Credential Creation Options",
+     "registration-example-credential-creation-options"
+    ],
+    [
+     4,
+     "Registration Example: Authenticator Attestation Response",
+     "registration-example-authenticator-attestation-response"
+    ],
+    [
+     3,
+     "Registration Primary IDL",
+     "registration-primary-idl"
+    ],
+    [
+     4,
+     "ServerPublicKeyCredentialCreationOptionsRequest",
+     "serverpublickeycredentialcreationoptionsrequest"
+    ],
+    [
+     4,
+     "ServerPublicKeyCredentialCreationOptionsResponse",
+     "serverpublickeycredentialcreationoptionsresponse"
+    ],
+    [
+     4,
+     "ServerAuthenticatorAttestationResponse",
+     "serverauthenticatorattestationresponse"
+    ],
+    [
+     3,
+     "Registration Supporting IDL",
+     "registration-supporting-idl"
+    ],
+    [
+     4,
+     "ServerPublicKeyCredential",
+     "serverpublickeycredential"
+    ],
+    [
+     4,
+     "ServerPublicKeyCredentialUserEntity",
+     "serverpublickeycredentialuserentity"
+    ],
+    [
+     4,
+     "ServerPublicKeyCredentialDescriptor",
+     "serverpublickeycredentialdescriptor"
+    ],
+    [
+     2,
+     "Authentication",
+     "authentication"
+    ],
+    [
+     3,
+     "Authentication Overview",
+     "authentication-overview"
+    ],
+    [
+     3,
+     "Authentication Examples",
+     "authentication-examples"
+    ],
+    [
+     4,
+     "Authentication Example: Credential Get Options",
+     "authentication-example-credential-get-options"
+    ],
+    [
+     4,
+     "Authentication Example: Authenticator Assertion Response",
+     "authentication-example-authenticator-assertion-response"
+    ],
+    [
+     3,
+     "Authentication IDL",
+     "authentication-idl"
+    ],
+    [
+     4,
+     "ServerPublicKeyCredentialGetOptionsRequest",
+     "serverpublickeycredentialgetoptionsrequest"
+    ],
+    [
+     4,
+     "ServerPublicKeyCredentialGetOptionsResponse",
+     "serverpublickeycredentialgetoptionsresponse"
+    ],
+    [
+     4,
+     "ServerAuthenticatorAssertionResponse",
+     "serverauthenticatorassertionresponse"
+    ],
+    [
+     2,
+     "Common",
+     "common"
+    ],
+    [
+     3,
+     "Common IDL",
+     "common-idl"
+    ],
+    [
+     4,
+     "ServerResponse",
+     "serverresponse"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fido2-server-conformance-test-api.md"
+  },
+  {
+   "id": "ctt-fido2-server",
+   "source": "ctt",
+   "title": "Conformance tools docs: FIDO2/Server — Running FIDO2 Server tests",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/FIDO2/Server/README.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/FIDO2/Server/README.md",
+   "kind": "markdown",
+   "sha256": "a43a56abc33509781859758d19624e29bc18bca50d467bb3cef73b29d84a3774",
+   "headings": [
+    [
+     1,
+     "Running FIDO2 Server tests",
+     "running-fido2-server-tests"
+    ],
+    [
+     2,
+     "FIDO2 Server Tests Options",
+     "fido2-server-tests-options"
+    ],
+    [
+     2,
+     "Preparations and Configurations",
+     "preparations-and-configurations"
+    ],
+    [
+     2,
+     "Run tests",
+     "run-tests"
+    ],
+    [
+     2,
+     "Test Results",
+     "test-results"
+    ],
+    [
+     2,
+     "Submit Results",
+     "submit-results"
+    ],
+    [
+     2,
+     "Test Items",
+     "test-items"
+    ],
+    [
+     3,
+     "\"MakeCredential Request\"",
+     "makecredential-request"
+    ],
+    [
+     4,
+     "Server-ServerPublicKeyCredentialCreationOptions-Req-1",
+     "server-serverpublickeycredentialcreationoptions-req-1"
+    ],
+    [
+     3,
+     "\"MakeCredential Response\"",
+     "makecredential-response"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-1",
+     "server-serverauthenticatorattestationresponse-resp-1"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-2",
+     "server-serverauthenticatorattestationresponse-resp-2"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-3",
+     "server-serverauthenticatorattestationresponse-resp-3"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-4",
+     "server-serverauthenticatorattestationresponse-resp-4"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-5",
+     "server-serverauthenticatorattestationresponse-resp-5"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-6",
+     "server-serverauthenticatorattestationresponse-resp-6"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-7",
+     "server-serverauthenticatorattestationresponse-resp-7"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-8",
+     "server-serverauthenticatorattestationresponse-resp-8"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-9",
+     "server-serverauthenticatorattestationresponse-resp-9"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-A",
+     "server-serverauthenticatorattestationresponse-resp-a"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-B",
+     "server-serverauthenticatorattestationresponse-resp-b"
+    ],
+    [
+     3,
+     "\"GetAssertion Request\"",
+     "getassertion-request"
+    ],
+    [
+     4,
+     "Server-ServerPublicKeyCredentialGetOptionsResponse-Req-1",
+     "server-serverpublickeycredentialgetoptionsresponse-req-1"
+    ],
+    [
+     3,
+     "\"GetAssertion Response\"",
+     "getassertion-response"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAssertionResponse-Resp-1",
+     "server-serverauthenticatorassertionresponse-resp-1"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAssertionResponse-Resp-2",
+     "server-serverauthenticatorassertionresponse-resp-2"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAssertionResponse-Resp-3",
+     "server-serverauthenticatorassertionresponse-resp-3"
+    ],
+    [
+     3,
+     "\"Metadata Service Tests\"",
+     "metadata-service-tests"
+    ],
+    [
+     4,
+     "Server-ServerAuthenticatorAttestationResponse-Resp-1",
+     "server-serverauthenticatorattestationresponse-resp-1-1"
+    ]
+   ],
+   "links": [],
+   "page": "pages/ctt/ctt-fido2-server.md"
+  },
+  {
+   "id": "ctt-docs-index",
+   "source": "ctt",
+   "title": "Conformance tools docs: index",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/README.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/README.md",
+   "kind": "markdown",
+   "sha256": "5c22f405ea25e504195327cb179d690b901a17d051d932d4824307f45e88328c",
+   "headings": [],
+   "links": [],
+   "page": "pages/ctt/ctt-docs-index.md"
+  },
+  {
+   "id": "ctt-uaf-server-conformance-test-api",
+   "source": "ctt",
+   "title": "Conformance tools docs: UAF/Server/Conformance-Test-API",
+   "url": "https://github.com/fido-alliance/conformance-test-tools-resources/blob/main/docs/UAF/Server/Conformance-Test-API.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/conformance-test-tools-resources/main/docs/UAF/Server/Conformance-Test-API.md",
+   "kind": "markdown",
+   "sha256": "15ebcb095319fc64134f6425a5596cffe498a6fd7edf546f69551629bcd0aaf2",
+   "headings": [],
+   "links": [],
+   "page": "pages/ctt/ctt-uaf-server-conformance-test-api.md"
+  },
+  {
+   "id": "fido2-interop-webapp",
+   "source": "interop",
+   "title": "FIDO2 interop web app (repository README)",
+   "url": "https://github.com/fido-alliance/fido2-interop-webapp/blob/master/README.md",
+   "raw_url": "https://raw.githubusercontent.com/fido-alliance/fido2-interop-webapp/master/README.md",
+   "kind": "markdown",
+   "sha256": "4ae6da6c60060be4242a7bbb3c5c3ab7fa2888a34f0fb5d795fedad393fdc4f5",
+   "headings": [
+    [
+     1,
+     "fido2-interop-webapp",
+     "fido2-interop-webapp"
+    ],
+    [
+     2,
+     "DO NOT MODIFY FIDO CODE IF YOU ARE PARTICIPATING IN THE INTEROPERABILITY EVENT!",
+     "do-not-modify-fido-code-if-you-are-participating-in-the-interoperability-event"
+    ],
+    [
+     2,
+     "FAIL TO COMPLY MAY RESULT IN CANCELATION OF THE INTEROP RESULTS",
+     "fail-to-comply-may-result-in-cancelation-of-the-interop-results"
+    ],
+    [
+     2,
+     "IF YOU HAVE ANY ISSUES PLEASE REPORT HERE",
+     "if-you-have-any-issues-please-report-here"
+    ],
+    [
+     2,
+     "OR EMAIL CONFORMANCE-TOOLS@FIDOALLIANCE.ORG",
+     "or-email-conformance-toolsfidoallianceorg"
+    ]
+   ],
+   "links": [],
+   "page": "pages/interop/fido2-interop-webapp.md"
+  }
+ ]
+}

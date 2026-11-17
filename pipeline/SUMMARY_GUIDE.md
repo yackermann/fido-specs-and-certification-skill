@@ -53,3 +53,32 @@ about the features added or removed, or write "Editorial only" if that's all it 
   L1/L2 lives in this document").
 - No marketing tone, no hedging filler.
 - Every anchor you cite must appear in that page's TOC.
+
+## Resource pages (`catalog/resources/pages/<source>/<id>.md`)
+
+Same principles, different source. Replace only the block between `## Summary` and `## Outline`.
+Read the page with the skill's script (it fetches the live page and caches it):
+
+```bash
+python3 fido-spec-and-certification/scripts/resources.py show <id>            # catalog page + outline
+python3 fido-spec-and-certification/scripts/resources.py read <id> --max-chars 12000
+python3 fido-spec-and-certification/scripts/resources.py read <id> "<heading words>"
+```
+
+Format:
+
+```
+## Summary
+
+<1–2 short paragraphs, 50–150 words: what the page covers and who it is for, with the concrete
+facts a reader comes for (steps, prerequisites, versions, deadlines, who to contact, what a test
+tool does), in your own words. Mark time-sensitive facts (fees, dates, versions, lists of labs)
+as "as of the snapshot" and don't copy fee amounts: say the page lists them.>
+
+**Look here for:**
+- <typical question> → <heading> `#<anchor>`   (2–5 bullets; anchors must exist in the Outline;
+  if the page has no useful headings, point to the page itself without an anchor)
+```
+
+Legal-terms and very short pages: 1–3 sentences, no bullets needed. Never invent anchors, steps,
+programme names or numbers. If a page contradicts another page or a spec, say so briefly.
