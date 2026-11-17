@@ -34,8 +34,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / "pipeline/out/specs-index.json"
 CACHE = ROOT / "pipeline/.cache"
-CATALOG = ROOT / "fido-certification/catalog"
-UA = "fido-certification-skill/0.1 (catalog builder)"
+CATALOG = ROOT / "fido-spec-and-certification/catalog"
+UA = "fido-spec-and-certification-skill/0.1 (catalog builder)"
 BASE = "https://fidoalliance.org/specs/"
 
 # ---------------------------------------------------------------- classification

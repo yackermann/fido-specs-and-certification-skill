@@ -20,7 +20,7 @@ DOC is a doc_id (e.g. fido-client-to-authenticator-protocol) or a unique part of
 (e.g. "ctap", "metadata-statement"). V is a version like 2.2; add "-errata" for an
 errata edition (2.1-errata). Without --version the latest PS edition is used.
 
-Cache: $FIDO_SPEC_CACHE or ~/.cache/fido-certification
+Cache: $FIDO_SPEC_CACHE or ~/.cache/fido-spec-and-certification
 """
 from __future__ import annotations
 
@@ -37,8 +37,8 @@ from pathlib import Path
 
 SKILL = Path(__file__).resolve().parent.parent
 CATALOG = SKILL / "catalog"
-CACHE = Path(os.environ.get("FIDO_SPEC_CACHE", Path.home() / ".cache" / "fido-certification"))
-UA = "fido-certification-skill/0.1"
+CACHE = Path(os.environ.get("FIDO_SPEC_CACHE", Path.home() / ".cache" / "fido-spec-and-certification"))
+UA = "fido-spec-and-certification-skill/0.1"
 ALIASES = {
     "ctap": "fido-client-to-authenticator-protocol",
     "ctap2": "fido-client-to-authenticator-protocol",

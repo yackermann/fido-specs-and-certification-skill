@@ -1,5 +1,5 @@
 ---
-name: fido-certification
+name: fido-spec-and-certification
 description: Answers questions about FIDO Alliance specifications and FIDO certification (CTAP/FIDO2, WebAuthn, UAF, U2F/CTAP1, Metadata Service, Authenticator Security Requirements L1–L3+, Biometric Component certification, FIDO2 server requirements, FDO, CXF). Finds the right document and version, downloads the official file from fidoalliance.org or w3.org on demand, and answers with section-level citations. Use when someone asks what a FIDO spec requires, which documents or levels apply to their product, how to prepare for FIDO certification, what changed between versions, or wants a requirement, command, error code or field explained.
 ---
 
@@ -69,7 +69,7 @@ and the version barely matters, answer from the latest version and say which one
    some managed environments allow only listed domains), the site may reject the client, or the
    machine may be offline.
    1. **curl** (when you have a shell), saving to the cache path the script printed:
-      `curl -sL -A "fido-certification-skill/0.1" -o "<cache path>" "<url>"`. Then rerun the
+      `curl -sL -A "fido-spec-and-certification-skill/0.1" -o "<cache path>" "<url>"`. Then rerun the
       `fido.py` command; it picks up the cached file and checks the hash.
    2. **Web fetch tool** (it runs outside the code sandbox). Fetch the document URL from the catalog
       page and ask for the **exact text** of the section you need, by number and title from the
@@ -157,7 +157,7 @@ How to use them:
    Tell the user plainly, e.g. "The catalog (built 2026-11-16) lists SR 1.6 as active until 2027-01-13;
    FIDO's page now lists it as sunset."
 2. If a newer version exists that the catalog lacks, you can still use it: download it from the
-   live URL with `curl -A "fido-certification-skill/0.1"`, then read it. Say that it isn't
+   live URL with `curl -A "fido-spec-and-certification-skill/0.1"`, then read it. Say that it isn't
    catalogued yet, so there's no summary or TOC for it.
 3. Mention once at the end of the answer that the catalog needs a refresh (maintainers: see the
    repository README, "Updating the catalog"). Don't block the answer on it.

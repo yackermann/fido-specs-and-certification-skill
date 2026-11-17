@@ -1,11 +1,11 @@
-# FIDO certification skill
+# FIDO spec and certification skill
 
 A Claude skill for FIDO specifications and FIDO certification. It ships **summaries and tables of
 contents only**. The official documents are downloaded from fidoalliance.org / w3.org when a user
 needs them, so no FIDO or W3C text is redistributed.
 
 ```
-fido-certification/          ← the skill (this folder is what you distribute)
+fido-spec-and-certification/          ← the skill (this folder is what you distribute)
   SKILL.md                   workflow: clarify role/protocol/version → find → download → cite
   catalog/INDEX.md           one line per document, read first
   catalog/catalog.json       every document version: URL, sha256, status
@@ -22,12 +22,12 @@ SCOPE.md                     the approved document list
 
 ## Install
 
-- **Claude Code:** copy or symlink `fido-certification/` into `~/.claude/skills/` (personal) or
+- **Claude Code:** copy or symlink `fido-spec-and-certification/` into `~/.claude/skills/` (personal) or
   `.claude/skills/` (project).
-- **claude.ai:** zip the `fido-certification/` folder and upload it under Settings → Capabilities → Skills.
+- **claude.ai:** zip the `fido-spec-and-certification/` folder and upload it under Settings → Capabilities → Skills.
   Downloads need network access to fidoalliance.org and w3.org.
 
-Downloaded documents are cached in `~/.cache/fido-certification` (override with `FIDO_SPEC_CACHE`).
+Downloaded documents are cached in `~/.cache/fido-spec-and-certification` (override with `FIDO_SPEC_CACHE`).
 
 ## Scope
 
@@ -46,7 +46,7 @@ python3 pipeline/crawl_index.py > pipeline/out/specs-index.json          # disco
 python3 pipeline/build_catalog.py                                         # pages + catalog.json (keeps summaries)
 # write summaries for new pages (pipeline/SUMMARY_GUIDE.md), then:
 python3 pipeline/make_index.py
-git diff fido-certification/catalog                                       # review, commit, tag e.g. catalog-2026.11
+git diff fido-spec-and-certification/catalog                                       # review, commit, tag e.g. catalog-2026.11
 ```
 
 When FIDO re-publishes a file, its hash changes. `fido.py` then warns that the catalog TOC may be

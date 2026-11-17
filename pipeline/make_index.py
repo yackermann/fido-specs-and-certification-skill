@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write fido-certification/catalog/INDEX.md (read first by the skill) and SCOPE.md (maintainer record).
+"""Write fido-spec-and-certification/catalog/INDEX.md (read first by the skill) and SCOPE.md (maintainer record).
 
 Run after build_catalog.py and after summaries are written:
     python3 pipeline/make_index.py
@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CAT = ROOT / "fido-certification/catalog"
+CAT = ROOT / "fido-spec-and-certification/catalog"
 ORDER = ["ctap", "webauthn", "sr", "bio", "cert", "mds", "uaf", "u2f", "common", "fdo", "cx"]
 
 

@@ -1,6 +1,6 @@
 # How catalog summaries are written
 
-Each catalog page `fido-certification/catalog/docs/<family>/<doc_id>/<version>_<date>.md` has a
+Each catalog page `fido-spec-and-certification/catalog/docs/<family>/<doc_id>/<version>_<date>.md` has a
 `## Summary` block that starts as `_TODO: summary not written yet._`. Replace **only that block**
 (everything between `## Summary` and `## Table of contents`). Don't touch the front matter or the TOC:
 `pipeline/build_catalog.py` regenerates them and keeps your summary.
@@ -11,8 +11,8 @@ Use the skill's own script. Read only the parts you need, never the whole docume
 
 ```bash
 export FIDO_SPEC_CACHE=<shared cache dir given in your brief>
-python3 fido-certification/scripts/fido.py show  <doc_id> --version <v>      # catalog page + TOC
-python3 fido-certification/scripts/fido.py section <doc_id> <anchor|number> --version <v> --max-chars 6000
+python3 fido-spec-and-certification/scripts/fido.py show  <doc_id> --version <v>      # catalog page + TOC
+python3 fido-spec-and-certification/scripts/fido.py section <doc_id> <anchor|number> --version <v> --max-chars 6000
 ```
 
 Errata editions use `--version 2.1-errata`. For PDF-only documents, `fetch` prints the local path;

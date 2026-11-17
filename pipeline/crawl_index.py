@@ -15,7 +15,7 @@ import urllib.parse
 import urllib.request
 
 BASE = "https://fidoalliance.org/specs/"
-UA = "fido-certification-skill/0.1 (catalog crawler)"
+UA = "fido-spec-and-certification-skill/0.1 (catalog crawler)"
 # asset folders of the HTML spec renderings, not documents
 SKIP_DIRS = {"fancy-index/", "img/", "images/", "resources/", "vendor/", "css/", "js/", "fonts/", "scripts/", "styles/"}
 
